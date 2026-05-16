@@ -1,0 +1,20 @@
+text,intent
+"My exam is tomorrow and I feel like I don’t know anything",Learning
+"I want to master some skills but I’m confused about which ones and how to start",Learning
+"I want to become very knowledgeable but I don’t know what path to follow",Learning
+
+"I need a job but I don’t know where to begin",Career
+"I want to start earning but I’m unsure which direction to take",Career
+"I want financial independence but I don’t know what career path will get me there",Career
+
+"I feel disowned right now, like nobody is with me",Stress
+"I’m 23, jobless, dependent, and stuck",Stress
+"I feel overwhelmed thinking about everything at once",Stress
+
+"I want to build myself into my best version",SelfImprovement
+"I have ideas but I’m unable to implement them and feel useless",SelfImprovement
+"I was a bright student earlier but now I feel like a failure",SelfImprovement
+
+"I feel very lonely right now and blamed by friends",Loneliness
+"Everyone feels I’m irritating and I wonder if I’m bad",Loneliness
+"I want to connect with people but I push them away",Loneliness

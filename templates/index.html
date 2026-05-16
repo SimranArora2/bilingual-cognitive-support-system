@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cognitive Support System</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0f0f13; color: #e8e6f0; font-family: sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+  .shell { width: 100%; max-width: 720px; min-height: 100vh; display: flex; flex-direction: column; }
+  header { padding: 20px 24px; border-bottom: 1px solid #2a2a38; display: flex; align-items: center; gap: 12px; }
+  header h1 { font-size: 18px; }
+  header p { font-size: 12px; color: #5f5d70; margin-top: 2px; }
+  .dot { width: 7px; height: 7px; background: #4ade80; border-radius: 50%; margin-left: auto; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  #chat { flex: 1; overflow-y: auto; padding: 24px 20px; display: flex; flex-direction: column; gap: 16px; scroll-behavior: smooth; }
+  .welcome { text-align: center; padding: 40px 20px; }
+  .welcome h2 { font-size: 22px; margin-bottom: 10px; }
+  .welcome p { color: #9896aa; font-size: 14px; margin-bottom: 20px; line-height: 1.6; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .chip { background: #1e1e28; border: 1px solid #2a2a38; color: #9896aa; font-size: 13px; padding: 7px 14px; border-radius: 100px; cursor: pointer; font-family: sans-serif; transition: all 0.2s; }
+  .chip:hover { border-color: #7c6af7; color: #a78bfa; background: rgba(124,106,247,0.08); }
+  .msg { display: flex; gap: 10px; animation: fadeUp 0.3s ease; }
+  .msg.user { flex-direction: row-reverse; }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+  .bubble { max-width: 80%; padding: 10px 14px; border-radius: 14px; font-size: 14px; line-height: 1.6; }
+  .msg.user .bubble { background: rgba(124,106,247,0.2); border: 1px solid rgba(124,106,247,0.3); border-top-right-radius: 4px; }
+  .card { background: #17171f; border: 1px solid #2a2a38; border-radius: 14px; overflow: hidden; animation: fadeUp 0.3s ease; }
+  .card-top { background: #1e1e28; padding: 12px 16px; display: flex; gap: 16px; border-bottom: 1px solid #2a2a38; }
+  .badge { display: flex; flex-direction: column; gap: 3px; }
+  .badge .icon { font-size: 18px; }
+  .badge .lbl { font-size: 10px; color: #5f5d70; text-transform: uppercase; letter-spacing: 0.5px; }
+  .badge .val { font-size: 13px; font-weight: 500; color: #e8e6f0; }
+  .conf-wrap { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 6px; }
+  .steps { padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .step { display: flex; gap: 8px; font-size: 13px; color: #9896aa; align-items: flex-start; line-height: 1.5; }
+  .num { min-width: 20px; height: 20px; background: rgba(124,106,247,0.15); border: 1px solid rgba(124,106,247,0.3); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #a78bfa; flex-shrink: 0; }
+  .intent-list { padding: 8px 16px 4px; font-size: 12px; color: #7c6af7; border-bottom: 1px solid #2a2a38; }
+  .human-note { padding: 10px 16px; color: #a78bfa; font-size: 13px; font-style: italic; border-bottom: 1px solid #2a2a38; }
+  .feedback-section { padding: 12px 16px; border-top: 1px solid #2a2a38; }
+  .feedback-section p { font-size: 12px; color: #5f5d70; margin-bottom: 8px; }
+  .feedback-btns { display: flex; gap: 8px; }
+  .fb-btn { background: #1e1e28; border: 1px solid #2a2a38; color: #9896aa; font-size: 12px; padding: 6px 12px; border-radius: 8px; cursor: pointer; font-family: sans-serif; transition: all 0.2s; }
+  .fb-btn:hover { border-color: #7c6af7; color: #a78bfa; }
+  .followup-section { padding: 10px 16px 14px; border-top: 1px solid #2a2a38; }
+  .followup-section p { font-size: 12px; color: #5f5d70; margin-bottom: 8px; }
+  .followup-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+  .insight { padding: 8px 16px 12px; font-size: 11px; color: #5f5d70; font-style: italic; }
+  .typing-dots { display: flex; gap: 5px; padding: 14px; background: #17171f; border: 1px solid #2a2a38; border-radius: 14px; width: fit-content; }
+  .typing-dots span { width: 6px; height: 6px; background: #5f5d70; border-radius: 50%; animation: bounce 1.2s infinite; }
+  .typing-dots span:nth-child(2) { animation-delay: 0.15s; }
+  .typing-dots span:nth-child(3) { animation-delay: 0.3s; }
+  @keyframes bounce { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-6px)} }
+  .input-area { padding: 14px 20px 24px; border-top: 1px solid #2a2a38; background: #0f0f13; position: sticky; bottom: 0; }
+  .input-wrap { display: flex; gap: 8px; background: #17171f; border: 1px solid #2a2a38; border-radius: 14px; padding: 10px 12px; transition: border-color 0.2s; }
+  .input-wrap:focus-within { border-color: rgba(124,106,247,0.5); }
+  textarea { flex: 1; background: transparent; border: none; outline: none; color: #e8e6f0; font-family: sans-serif; font-size: 14px; resize: none; max-height: 100px; line-height: 1.5; }
+  textarea::placeholder { color: #5f5d70; }
+  button#send { width: 36px; height: 36px; background: linear-gradient(135deg,#7c6af7,#a78bfa); border: none; border-radius: 10px; cursor: pointer; color: white; font-size: 16px; flex-shrink: 0; transition: opacity 0.2s; }
+  button#send:hover { opacity: 0.85; }
+  button#send:disabled { opacity: 0.4; }
+  .hint { text-align: center; font-size: 11px; color: #5f5d70; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div>
+      <h1>🧠 Cognitive Support System</h1>
+      <p>NLP · Multi-intent · Bilingual · Adaptive Learning</p>
+    </div>
+    <div class="dot"></div>
+  </header>
+
+  <div id="chat">
+    <div class="welcome" id="welcome">
+      <h2>What's on your mind?</h2>
+      <p>Share how you're feeling — in English or Hindi.<br>I'll understand your intent and give you a grounded action plan.</p>
+      <div class="chips">
+        <div class="chip" onclick="fill(this)">I feel stressed about exams</div>
+        <div class="chip" onclick="fill(this)">I'm confused about my career</div>
+        <div class="chip" onclick="fill(this)">I feel lonely lately</div>
+        <div class="chip" onclick="fill(this)">I want to improve myself</div>
+        <div class="chip" onclick="fill(this)">mujhe bahut tension hai</div>
+        <div class="chip" onclick="fill(this)">samajh nahi aa raha kya karun</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="input-area">
+    <div class="input-wrap">
+      <textarea id="inp" placeholder="Tell me what's on your mind... (English या हिंदी में)" rows="1"></textarea>
+      <button id="send" onclick="send()">➤</button>
+    </div>
+    <p class="hint">Enter to send · Shift+Enter for new line</p>
+  </div>
+</div>
+
+<script>
+let lastResponse = null;
+let lastUserMessage = "";
+let currentLang = "en";
+
+const chat = document.getElementById('chat');
+const inp  = document.getElementById('inp');
+
+inp.addEventListener('input', () => {
+  inp.style.height = 'auto';
+  inp.style.height = Math.min(inp.scrollHeight, 100) + 'px';
+});
+
+inp.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
+});
+
+function fill(el) {
+  inp.value = (typeof el === 'string') ? el : el.textContent;
+  inp.focus();
+  inp.dispatchEvent(new Event('input'));
+}
+
+function addUser(text) {
+  document.getElementById('welcome')?.remove();
+  const d = document.createElement('div');
+  d.className = 'msg user';
+  d.innerHTML = `<div class="bubble">${esc(text)}</div>`;
+  chat.appendChild(d);
+  scroll();
+}
+
+function showTyping() {
+  const d = document.createElement('div');
+  d.id = 'typing';
+  d.innerHTML = '<div class="typing-dots"><span></span><span></span><span></span></div>';
+  chat.appendChild(d);
+  scroll();
+}
+
+function addCard(data) {
+  const conf = data.confidence;
+  const color = conf >= 75 ? '#4ade80' : conf >= 50 ? '#fbbf24' : '#fb7185';
+
+  const steps = data.steps.map((s, i) => `
+    <div class="step">
+      <div class="num">${i + 1}</div>
+      <span>${esc(s)}</span>
+    </div>
+  `).join('');
+
+  const intentList = data.intents
+    .map(i => `• ${i.name} (${i.confidence}%)`)
+    .join('&nbsp;&nbsp;');
+
+  const d = document.createElement('div');
+  d.className = 'card';
+
+  d.innerHTML = `
+    <div class="card-top">
+      <div class="badge">
+        <span class="icon">${data.intent_emoji}</span>
+        <span class="lbl">Primary intent</span>
+        <span class="val">${data.intent}</span>
+      </div>
+      <div class="badge">
+        <span class="icon">${data.mood_emoji}</span>
+        <span class="lbl">Mood</span>
+        <span class="val">${data.mood}</span>
+      </div>
+      <div class="conf-wrap">
+        <span style="font-size:10px;color:#5f5d70;text-transform:uppercase;letter-spacing:0.5px">
+          Confidence · <span style="color:${color}">${conf}%</span>
+        </span>
+        <div style="height:5px;background:#0f0f13;border-radius:3px;overflow:hidden">
+          <div style="width:${conf}%;height:100%;background:${color};border-radius:3px;transition:width 0.6s"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intent-list">
+      <b>All detected intents:</b> ${intentList}
+    </div>
+
+    // <div class="human-note" id="human-note"></div>
+
+    <div class="steps">${steps}</div>
+
+    <div class="feedback-section">
+      <p>Was this helpful?</p>
+      <div class="feedback-btns">
+        <button class="fb-btn" id="fb-yes" onclick="sendFeedback('yes')"></button>
+        <button class="fb-btn" id="fb-no" onclick="sendFeedback('no')"></button>
+        <button class="fb-btn" id="fb-partial" onclick="sendFeedback('partial')"></button>
+      </div>
+    </div>
+
+    <div class="followup-section">
+  <p id="followup-text">Want to go further?</p>
+
+  <div class="followup-btns">
+    <button class="chip" id="btn-next" onclick="handleFollowup('next')"></button>
+    <button class="chip" id="btn-simple" onclick="handleFollowup('simple')"></button>
+    <button class="chip" id="btn-deep" onclick="handleFollowup('deep')"></button>
+  </div>
+</div>
+
+    <div class="insight">
+      🧠 This system adapts over time based on your feedback.
+    </div>
+  `;
+
+  chat.appendChild(d);
+  scroll();
+}
+
+function esc(t) {
+  const d = document.createElement('div');
+  d.appendChild(document.createTextNode(t));
+  return d.innerHTML;
+}
+
+function scroll() { chat.scrollTop = chat.scrollHeight; }
+
+async function send() {
+  const text = inp.value.trim();
+  if (!text) return;
+
+  lastUserMessage = text;
+  inp.value = '';
+  inp.style.height = 'auto';
+  document.getElementById('send').disabled = true;
+
+  addUser(text);
+  showTyping();
+
+  try {
+    const res = await fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text })
+    });
+    if (!res.ok) {
+      const errText = await res.text();
+      console.error("❌ Server error:", errText);
+
+      document.getElementById('typing')?.remove();
+
+      const d = document.createElement('div');
+      d.className = 'msg';
+      d.innerHTML = `<div class="bubble">⚠️ Server error. Check terminal.</div>`;
+      chat.appendChild(d);
+
+      return;
+    }
+
+    const data = await res.json();
+    const lang = data.lang || "en";
+    lastResponse = data;
+    document.getElementById('typing')?.remove();
+    addCard(data);
+    // ✅ STORE LANG GLOBALLY
+    currentLang = lang;
+
+    // ✅ TEXT CONFIG
+    const texts = {
+      en: {
+        followup: "Want to go further?",
+        next: "Next step",
+        simple: "Simplify",
+        deep: "Go deeper",
+        feedback: "Was this helpful?"
+      },
+      hi: {
+        followup: "आगे बढ़ना चाहते हो?",
+          next: "अगला कदम",
+        simple: "सरल बनाओ",
+        deep: "और गहराई से समझो",
+        feedback: "क्या यह मददगार था?"
+      }
+    };
+
+    // ✅ APPLY TEXT TO UI (LATEST CARD ONLY)
+    const cards = document.querySelectorAll('.card');
+    const lastCard = cards[cards.length - 1];
+
+    if (lastCard) {
+      lastCard.querySelector('#followup-text').innerText = texts[lang].followup;
+
+      lastCard.querySelector('#btn-next').innerText = texts[lang].next;
+      lastCard.querySelector('#btn-simple').innerText = texts[lang].simple;
+      lastCard.querySelector('#btn-deep').innerText = texts[lang].deep;
+      lastCard.querySelector('.feedback-section p').innerText = texts[lang].feedback;
+      // lastCard.querySelector('#human-note').innerText =
+      //   lang === "hi"
+      //     ? "मुझे समझ आता है कि यह थोड़ा भारी लग सकता है — चलो इसे साथ में आसान बनाते हैं।"
+      //     : "I understand this might feel overwhelming — let's break it down together.";
+      // lastCard.querySelector('.insight').innerText =
+      //   lang === "hi"
+      //     ? "🧠 यह सिस्टम आपके फीडबैक से समय के साथ बेहतर होता है।"
+      //     : "🧠 This system adapts over time based on your feedback.";
+      lastCard.querySelector('#fb-yes').innerText =
+        lang === "hi" ? "👍 हाँ" : "👍 Yes";
+
+      lastCard.querySelector('#fb-no').innerText =
+        lang === "hi" ? "👎 नहीं" : "👎 No";
+
+      lastCard.querySelector('#fb-partial').innerText =
+        lang === "hi" ? "🤔 थोड़ा" : "🤔 Partially";
+    }
+  } catch (e) {
+    document.getElementById('typing')?.remove();
+    console.error('Chat error:', e);
+  }
+
+  document.getElementById('send').disabled = false;
+  inp.focus();
+}
+
+async function sendFeedback(type) {
+  if (!lastResponse) return;
+  try {
+    await fetch('/feedback', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: lastUserMessage,
+        feedback: type,
+        intent: lastResponse.intent,
+        confidence: lastResponse.confidence,
+        mood: lastResponse.mood
+      })
+    });
+    alert('Thanks! Your feedback helps improve the system 🚀');
+  } catch (e) {
+    console.error('Feedback error:', e);
+  }
+}
+
+function handleFollowup(type) {
+  if (!lastResponse) return;
+  sendWithMode(type);
+}
+
+async function sendWithMode(mode) {
+  document.getElementById('send').disabled = true;
+  document.getElementById('welcome')?.remove();
+
+  // Show a user bubble
+  const labels = {
+    next:   currentLang === 'hi' ? '➤ अगला कदम'        : '➤ Next step',
+    simple: currentLang === 'hi' ? '➤ सरल बनाओ'         : '➤ Simplify',
+    deep:   currentLang === 'hi' ? '➤ और गहराई से समझो' : '➤ Go deeper'
+  };
+  const bubble = document.createElement('div');
+  bubble.className = 'msg user';
+  bubble.innerHTML = `<div class="bubble">${labels[mode]}</div>`;
+  chat.appendChild(bubble);
+  scroll();
+
+  showTyping();
+
+  try {
+    const res = await fetch('/followup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        mode:       mode,
+        intent:     lastResponse.intent,
+        intents:    lastResponse.intents,
+        mood:       lastResponse.mood,
+        confidence: lastResponse.confidence,
+        lang:       currentLang
+      })
+    });
+
+    const data = await res.json();
+    lastResponse = data;
+    document.getElementById('typing')?.remove();
+    addCard(data);
+
+    // Apply language text to new card
+    const cards   = document.querySelectorAll('.card');
+    const lastCard = cards[cards.length - 1];
+    if (lastCard) {
+      const t = currentLang === 'hi'
+        ? { followup:'आगे बढ़ना चाहते हो?', next:'अगला कदम', simple:'सरल बनाओ', deep:'और गहराई से समझो', feedback:'क्या यह मददगार था?', yes:'👍 हाँ', no:'👎 नहीं', partial:'🤔 थोड़ा', insight:'🧠 यह सिस्टम आपके फीडबैक से समय के साथ बेहतर होता है।' }
+        : { followup:'Want to go further?', next:'Next step', simple:'Simplify', deep:'Go deeper', feedback:'Was this helpful?', yes:'👍 Yes', no:'👎 No', partial:'🤔 Partially', insight:'🧠 This system adapts over time based on your feedback.' };
+
+      lastCard.querySelector('#followup-text').innerText        = t.followup;
+      lastCard.querySelector('#btn-next').innerText             = t.next;
+      lastCard.querySelector('#btn-simple').innerText           = t.simple;
+      lastCard.querySelector('#btn-deep').innerText             = t.deep;
+      lastCard.querySelector('.feedback-section p').innerText   = t.feedback;
+      lastCard.querySelector('#fb-yes').innerText               = t.yes;
+      lastCard.querySelector('#fb-no').innerText                = t.no;
+      lastCard.querySelector('#fb-partial').innerText           = t.partial;
+      lastCard.querySelector('.insight').innerText              = t.insight;
+    }
+
+  } catch(e) {
+    document.getElementById('typing')?.remove();
+    console.error('Followup error:', e);
+  }
+
+  document.getElementById('send').disabled = false;
+  inp.focus();
+}
+
+</script>
+</body>
+</html>

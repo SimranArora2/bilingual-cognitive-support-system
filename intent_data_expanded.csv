@@ -1,0 +1,695 @@
+text,intent
+"mujhe bahut dar lag raha hai",Stress
+"bohot anxiety ho rahi hai",Stress
+"andar se ghabrahat ho rahi hai",Stress
+"heart fast dhadak raha hai darr se",Stress
+"lagta hai kuch galat hone wala hai",Stress
+"bahut zyada tension aur darr hai",Stress
+"i feel scared and anxious",Stress
+"i am feeling very nervous and afraid",Stress
+"work load bahut zyada badh gaya hai",Stress
+"i am feeling so burnt out lately",Stress
+"raat ko neend nahi aati tension ki wajah se",Stress
+"dimag bilkul phat raha hai itni chinta hai",Stress
+"too much pressure at the office",Stress
+"man bahut bhari bhari lag raha hai",Stress
+"everything is overwhelming me right now",Stress
+"chhoti chhoti baat par gussa aa raha hai",Stress
+"i can't stop overthinking everything",Stress
+"itna zyada stress handle nahi ho raha",Stress
+"pata nahi future mein kya hoga darr lag raha hai",Stress
+"i feel like i am under a lot of pressure",Stress
+"office ki deadlines khatam hi nahi ho rahi",Stress
+"dil ki dhadkan badh rahi hai ghabrahat se",Stress
+"i am losing my peace of mind",Stress
+"ghar ki problems ki wajah se bahut tension hai",Stress
+"constant headache ho raha hai stress se",Stress
+"i feel like crying for no reason",Stress
+"exams ka darr sataye ja raha hai",Stress
+"i am at my breaking point",Stress
+"itna shor hai dimaag mein sukoon nahi hai",Stress
+"i feel so restless these days",Stress
+mujhe bahut tension hai,Stress
+mujhe stress ho raha hai,Stress
+bahut tension hai,Stress
+pareshan hoon bahut,Stress
+dimag kharab ho raha hai,Stress
+bahut pressure feel ho raha hai,Stress
+ghabra raha hoon,Stress
+sab kuch overwhelming lag raha hai,Stress
+"sirf negative thoughts hi aa rahe hain",Stress
+"too many responsibilities on my shoulders",Stress
+"i am struggling to keep it together",Stress
+"exams ke liye kaise prepare karun?",Learning
+"i am struggling to understand this topic",Learning
+"coding seekhne ka sabse accha tareeka kya hai?",Learning
+"mujhe maths bilkul samajh nahi aata",Learning
+"how to improve my communication skills?",Learning
+"revision karne ka time nahi mil raha",Learning
+"concepts clear nahi ho rahe hain",Learning
+"i want to learn a new language",Learning
+"online courses suggest kijiye",Learning
+"notes banane mein problem ho rahi hai",Learning
+"concentration nahi ban paa rahi padhai mein",Learning
+"how can i score better in finals?",Learning
+"biology ke diagrams bahut mushkil hain",Learning
+"i need a study timetable",Learning
+"complex formulas yaad nahi rehte",Learning
+"merai basics bahut weak hain",Learning
+"mujhe history bore lagti hai",Learning
+"how to read faster and retain more?",Learning
+"grammar mein bahut galtiyan hoti hain",Learning
+"i want to upgrade my skills",Learning
+"kahan se start karun padhna?",Learning
+"ye project kaise complete hoga?",Learning
+"i need a tutor for physics",Learning
+"book padhne ka mann karta hai par focus nahi hota",Learning
+"effective way to learn data science",Learning
+"i feel so isolated from everyone",Loneliness
+"koi mujhse baat nahi karta",Loneliness
+"i have no friends to share my feelings",Loneliness
+"feeling very lonely tonight",Loneliness
+"sabke beech hokar bhi akela lagta hai",Loneliness
+"i miss having someone to talk to",Loneliness
+"ghar pe sab busy rehte hain",Loneliness
+"i feel like an outsider everywhere",Loneliness
+"tanhai se darr lagne laga hai",Loneliness
+"no one really understands me",Loneliness
+"i am spending all my time alone",Loneliness
+"kisi ka saath chahiye bas",Loneliness
+"i feel disconnected from the world",Loneliness
+"sab dost badal gaye hain",Loneliness
+"i have no one to call in an emergency",Loneliness
+"akelaapan khaaye ja raha hai",Loneliness
+"social media dekh kar aur akela lagta hai",Loneliness
+"i wish i had a best friend",Loneliness
+"room mein akele baithe rehna pasand nahi",Loneliness
+"i feel ignored by my colleagues",Loneliness
+"no one checked on me today",Loneliness
+"it's hard being alone all the time",Loneliness
+"everyone else has someone except me",Loneliness
+"long distance ki wajah se akela feel hota hai",Loneliness
+"i feel invisible to others",Loneliness
+"kya mai job lu ya padhai karun",Confusion/DecisionMaking
+kya karun samajh nahi aa raha,Confusion/DecisionMaking
+samajh nahi aa raha kya karun,Confusion/DecisionMaking
+kuch samajh nahi aa raha,Confusion/DecisionMaking
+bahut confused hoon,Confusion/DecisionMaking
+koi guidance nahi hai,Confusion/DecisionMaking
+faisla nahi ho pa raha,Confusion/DecisionMaking
+"should i study or take a job",Confusion/DecisionMaking
+"career decision samajh nahi aa raha",Confusion/DecisionMaking
+"do options me confuse hoon",Confusion/DecisionMaking
+"which path should i choose",Confusion/DecisionMaking
+"i don't know what to choose",Confusion/DecisionMaking
+"career aur passion mein se kya chunoon?",Confusion/DecisionMaking
+"i am stuck between two options",Confusion/DecisionMaking
+"kya mujhe ye job chhod deni chahiye?",Confusion/DecisionMaking
+"i am so confused about my life",Confusion/DecisionMaking
+"samajh nahi aa raha sahi kya hai galat kya",Confusion/DecisionMaking
+"should i move to a new city?",Confusion/DecisionMaking
+"dimag kuch keh raha hai aur dil kuch aur",Confusion/DecisionMaking
+"it's hard to make a final call",Confusion/DecisionMaking
+"i keep changing my mind",Confusion/DecisionMaking
+"confused hoon ki science loon ya commerce",Confusion/DecisionMaking
+"is it worth taking a risk?",Confusion/DecisionMaking
+"faisla lene mein darr lag raha hai",Confusion/DecisionMaking
+"i need clarity on this situation",Confusion/DecisionMaking
+"pata nahi mera rasta kahan ja raha hai",Confusion/DecisionMaking
+"too many choices are making me anxious",Confusion/DecisionMaking
+"should i marry now or wait?",Confusion/DecisionMaking
+"kya ye mere liye sahi investment hai?",Confusion/DecisionMaking
+"i am questioning my choices",Confusion/DecisionMaking
+"options dekh kar dimaag ghum raha hai",Confusion/DecisionMaking
+"how to decide the best path for me?",Confusion/DecisionMaking
+"faisla galat ho gaya toh kya hoga?",Confusion/DecisionMaking
+"i need someone to guide my decision",Confusion/DecisionMaking
+"uncertainty ki wajah se pareshan hoon",Confusion/DecisionMaking
+"which college should i pick?",Confusion/DecisionMaking
+"mere paas koi goals nahi hain",Motivation
+"i feel like giving up on everything",Motivation
+"kaam karne ka mann nahi karta",Motivation
+"how to stay motivated every day?",Motivation
+"life mein koi purpose nahi lag raha",Motivation
+"i am feeling very low and lazy",Motivation
+"kuch bada karna hai par start nahi kar pa raha",Motivation
+"i need some inspiration to work",Motivation
+"sab thik ho jayega na?",Motivation
+"i feel like a failure in life",Motivation
+"apne aap par bharosa nahi ho raha",Motivation
+"how to stop procrastinating?",Motivation
+"i have lost my spark",Motivation
+"mujhe lagta hai main kuch nahi kar sakta",Motivation
+"i need a push to start exercising",Motivation
+"sapne toh bahut hain par himmat nahi",Motivation
+"i am tired of being average",Motivation
+"why am i so demotivated?",Motivation
+"dusron ko dekh kar lagta hai main peeche hoon",Motivation
+"i want to change my life for the better",Motivation
+"energetic feel nahi ho raha",Motivation
+"kuch karne ki iccha hi mar gayi hai",Motivation
+"how to stay positive in bad times?",Motivation
+"i need a reason to keep going",Motivation
+"mujhe khud ko prove karna hai",Motivation
+"market mein jobs nahi mil rahi hain",Career
+"is my current field good for the future?",Career
+"i want to switch from IT to management",Career
+"salary growth nahi ho rahi hai",Career
+"how to prepare for a big interview?",Career
+"career growth ruk gayi hai",Career
+"i am worried about layoffs",Career
+"freelancing start karun ya job?",Career
+"resume mein kya changes karun?",Career
+"promotion kab milega pata nahi",Career
+"i want to start my own business",Career
+"skills upgrade kaise karun for career?",Career
+"i feel stuck in a dead-end job",Career
+"is a master's degree worth it now?",Career
+"office politics career kharab kar rahi hai",Career
+"i want to work abroad",Career
+"startup join karna sahi rahega?",Career
+"career change karne mein darr lag raha hai",Career
+"how to negotiate salary?",Career
+"mujhe coding jobs mein interest hai",Career
+"networking kaise badhaun career ke liye?",Career
+"i am confused about my niche",Career
+"part-time job options kya hain?",Career
+"internship nahi mil rahi hai",Career
+"career orientation ki zaroorat hai",Career
+"monthly budget manage nahi ho raha",Finance
+"loans ki wajah se bahut pareshan hoon",Finance
+"paisa kahan kharch ho raha hai pata nahi chalta",Finance
+"i need to save more money",Finance
+"investing kahan se start karun?",Finance
+"bank balance kam hota ja raha hai",Finance
+"credit card bills are piling up",Finance
+"paisa bacha nahi pa raha hoon",Finance
+"financial stability kaise milegi?",Finance
+"too many unexpected expenses",Finance
+"stock market mein paisa lagana chahiye?",Finance
+"mere upar bahut karz hai",Finance
+"how to create a passive income?",Finance
+"salary aate hi khatam ho jati hai",Finance
+"i am worried about my retirement",Finance
+"paisa kamane ka koi naya tareeka?",Finance
+"insurance lena zaroori hai kya?",Finance
+"tax bachaane ke tips chahiye",Finance
+"inflation ki wajah se kharcha badh gaya hai",Finance
+"i feel broke all the time",Finance
+"emergency fund kaise banaye?",Finance
+"gold mein invest karna kaisa rahega?",Finance
+"family expenses manage nahi ho rahe",Finance
+"i need advice on mutual funds",Finance
+"financial crisis chal rahi hai",Finance
+"pet mein dard ho raha hai subah se",Health
+"i am feeling very weak lately",Health
+"weight loss kaise karun jaldi?",Health
+"diet plan suggest kijiye for weight gain",Health
+"mental health par dhyan dena hai",Health
+"body pain ki wajah se kaam nahi ho raha",Health
+"i am suffering from chronic back pain",Health
+"baal bahut jhad rahe hain",Health
+"i need to quit my smoking habit",Health
+"skin infections ho rahe hain bar bar",Health
+"how to improve my immune system?",Health
+"sugar levels control nahi ho rahe",Health
+"i feel dizzy all the time",Health
+"eyesight week ho rahi hai screen time se",Health
+"yoga ke kya benefits hain?",Health
+"gym join karun ya ghar par workout?",Health
+"i have high blood pressure issues",Health
+"doctor se kab consult karna chahiye?",Health
+"thakan bahut jaldi ho jati hai",Health
+"i want to lead a healthy lifestyle",Health
+"digestion ki problem hai bahut",Health
+"pairo mein sujan aa gayi hai",Health
+"i am not eating properly",Health
+"allergies ki wajah se pareshan hoon",Health
+"heavy feeling in my chest",Health
+"partner ke saath roz jhagda hota hai",Relationship
+"i think my partner is cheating on me",Relationship
+"long distance relationship manage nahi ho raha",Relationship
+"how to move on after a breakup?",Relationship
+"parents shaadi ke liye force kar rahe hain",Relationship
+"i am in a toxic relationship",Relationship
+"humare beech communication gap hai",Relationship
+"trust issues ho rahe hain bohot",Relationship
+"i want to propose but i am scared",Relationship
+"meri family partner ko accept nahi kar rahi",Relationship
+"relationship mein interest khatam ho raha hai",Relationship
+"how to fix a broken relationship?",Relationship
+"my friend betrayed my trust",Relationship
+"breakup se kaise bahar aau?",Relationship
+"husband/wife ke saath banti nahi hai",Relationship
+"i feel ignored by my partner",Relationship
+"should i give a second chance?",Relationship
+"social anxiety ki wajah se date nahi kar pata",Relationship
+"feeling heartbroken and sad",Relationship
+"meri personal life disturb ho gayi hai",Relationship
+"we fight over small things",Relationship
+"compatibility issues ho rahe hain",Relationship
+"how to tell my parents about my boyfriend?",Relationship
+"i miss my ex so much",Relationship
+"kya humein break lena chahiye?",Relationship
+"log mere baare mein kya sochenge?",SocialAnxiety
+"i am scared of public speaking",SocialAnxiety
+"party mein jane mein darr lagta hai",SocialAnxiety
+"i can't make eye contact with strangers",SocialAnxiety
+"logon se baat karne mein pasina aata hai",SocialAnxiety
+"i feel like everyone is judging me",SocialAnxiety
+"clipping my words while talking",SocialAnxiety
+"i prefer staying at home alone",SocialAnxiety
+"social gatherings are very draining",SocialAnxiety
+"how to be more confident in a crowd?",SocialAnxiety
+"presentation dete waqt haath kaampte hain",SocialAnxiety
+"i overthink every social interaction",SocialAnxiety
+"phone par baat karne mein darr lagta hai",SocialAnxiety
+"i hate being the center of attention",SocialAnxiety
+"anxious feeling in a room full of people",SocialAnxiety
+"kaise socialize karun samajh nahi aata",SocialAnxiety
+"i feel awkward in conversations",SocialAnxiety
+"do i sound stupid when i talk?",SocialAnxiety
+"i am afraid of rejection",SocialAnxiety
+"ajnabi logon se kaise milun?",SocialAnxiety
+"i don't know how to start a conversation",SocialAnxiety
+"social life bilkul zero hai",SocialAnxiety
+"groups mein chup rehta hoon hamesha",SocialAnxiety
+"introvert hona problem ban gaya hai",SocialAnxiety
+"crowded places mein panic hota hai",SocialAnxiety
+I want to learn something new but don’t know where to start,Learning
+I want to learn something new but don't know where to start.,Learning
+"I want to learn something new, but don't know where to start.",Learning
+I want to learn something new. I don't know where to start.,Learning
+I have an exam tomorrow and I’m not prepared,Learning
+I have an exam tomorrow and I am not prepared for it. What should I do?,Learning
+I have an exam tomorrow and I am not prepared for it. How can I do it?,Learning
+I have an exam tomorrow and I am not prepared for it. How can I prepare for it?,Learning
+I want to improve my skills but feel lost,Learning
+I want to improve my skills but feel lost.,Learning
+I want to improve my skills but I feel lost.,Learning
+"I want to improve my skills, but I feel lost.",Learning
+I want to study a new topic but I don’t have a plan,Learning
+I want to study a new topic but I don’t have a plan. What should I do?,Learning
+I want to study a new topic but I don’t have a plan. I want to study a new topic but I don’t have a plan.,Learning
+I want to study a new topic but I don’t have a plan. I want to study a new topic but I don’t have a plan. What should I do?,Learning
+I feel like I’m not learning anything useful,Learning
+I feel like I’m not learning anything useful.,Learning
+I feel like I'm not learning anything useful.,Learning
+I feel like I am not learning anything useful.,Learning
+I want to become a better student,Learning
+How do I become a better student?,Learning
+How can I be a better student?,Learning
+How can I become a better student?,Learning
+I need help understanding a concept,Learning
+What is the best way to understand a concept?,Learning
+How do I understand a concept?,Learning
+How can I understand a concept?,Learning
+I want to learn but I feel demotivated,Learning
+I want to learn but I feel demotivated.,Learning
+"I want to learn, but I feel demotivated.",Learning
+I want to learn but feel demotivated.,Learning
+I want to learn a new skill for career growth,Learning
+I want to learn a new skill for career growth. I want to learn a new skill for career growth.,Learning
+I want to learn a new skill for career growth.,Learning
+I want to learn a new skill for career growth. I want to learn a new skill for career growth. I want to learn a new skill for career growth.,Learning
+I want to improve my grades,Learning
+How can I improve my grades?,Learning
+How can I get better grades?,Learning
+How do I get better grades?,Learning
+I need a job,Career
+I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job,Career
+I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job.,Career
+I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I need a job. I want a job. I need a job,Career
+I want to start earning money,Career
+How do I start earning money?,Career
+I want to start earning money. How can I do that?,Career
+How can I start earning money?,Career
+I am worried about my career path,Career
+What should I do if I am worried about my career path?,Career
+I am worried about my career path. What should I do?,Career
+I'm worried about my career path. What should I do?,Career
+I don’t know which job suits me,Career
+I don’t know which job suits me the best.,Career
+I don't know which job suits me the best.,Career
+I don't know which job suits me best.,Career
+I feel stuck in my career,Career
+I feel stuck in my career.,Career
+Why do I feel stuck in my career?,Career
+I feel stuck in my career. I feel stuck in my career.,Career
+I want to improve my resume,Career
+How can I improve my resume?,Career
+How do I improve my resume?,Career
+What should I do to improve my resume?,Career
+I need help preparing for interviews,Career
+How do I prepare for interviews?,Career
+How do I prepare for interview?,Career
+What should I do to prepare for interviews?,Career
+I want to change my career,Career
+I want to change my career. What should I do?,Career
+I want to change my career. How can I do it?,Career
+I want to change my career. How can I do that?,Career
+I want to become financially independent,Career
+I want to become financially independent. What should I do?,Career
+How do I become financially independent?,Career
+I want to become financially independent. How can I do this?,Career
+I want a job in AI/ML,Career
+I want to do a job in AI/ML. What should I do?,Career
+I want a job in AI/ML. How can I do it?,Career
+I want a job in AI/ML. How can I do that?,Career
+I feel stressed and overwhelmed,Stress
+I feel stressed and overwhelmed. What should I do?,Stress
+I feel overwhelmed and stressed out. What should I do?,Stress
+I feel stressed and overwhelmed.,Stress
+I am unable to manage my pressure,Stress
+I am unable to manage my pressure.,Stress
+I am unable to manage my pressure. I am unable to manage my stress.,Stress
+I am unable to manage my stress. I am unable to manage my stress.,Stress
+I feel like I’m losing control,Stress
+I feel like I'm losing control of my emotions.,Stress
+I feel like I'm losing control of my life.,Stress
+I feel like I’m losing control of my emotions.,Stress
+I can’t handle my responsibilities,Stress
+I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle,Stress
+I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities. I can’t handle my responsibilities.,Stress
+I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle my responsibilities. I can't handle,Stress
+I feel mentally exhausted,Stress
+I feel mentally and physically exhausted.,Stress
+I feel mentally exhausted. What should I do?,Stress
+I feel mentally exhausted.,Stress
+I am getting anxious every day,Stress
+I'm getting anxious every day. What should I do?,Stress
+I am getting anxious every day. How can I stop myself from getting anxious?,Stress
+I am getting anxious every day.,Stress
+I feel like I am failing,Stress
+I feel like I am failing.,Stress
+I feel like I am failing. What should I do?,Stress
+I feel like I'm failing.,Stress
+I feel tense all the time,Stress
+I feel tense all the time.,Stress
+I feel so tense all the time.,Stress
+I feel very tense all the time.,Stress
+I am under a lot of stress,Stress
+I am under a lot of stress.,Stress
+I am under a lot of stress. What should I do?,Stress
+I am under a lot of stress right now.,Stress
+I can’t relax,Stress
+Why can't I relax?,Stress
+I can't relax. I can't.,Stress
+I can’t relax. I can’t.,Stress
+I want to become my best version,SelfImprovement
+I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to be the best version of myself. I want to,SelfImprovement
+I want to be the best version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be,SelfImprovement
+I want to become the best version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be a better version of myself. I want to be,SelfImprovement
+I want to improve my habits,SelfImprovement
+How can I improve my habits?,SelfImprovement
+What should I do to improve my habits?,SelfImprovement
+I want to improve my habits. What should I do?,SelfImprovement
+I want to be more disciplined,SelfImprovement
+I want to be more disciplined. I want to be more disciplined.,SelfImprovement
+I want to be disciplined. I want to be more disciplined.,SelfImprovement
+I want to be disciplined. I want to be more disciplined. I want to be more disciplined.,SelfImprovement
+I want to improve my personality,SelfImprovement
+How can I improve my personality?,SelfImprovement
+What should I do to improve my personality?,SelfImprovement
+How do I improve my personality?,SelfImprovement
+I want to build confidence,SelfImprovement
+I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence.,SelfImprovement
+I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence,SelfImprovement
+I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence. I want to build confidence.,SelfImprovement
+I want to improve my time management,SelfImprovement
+How can I improve my time management skills?,SelfImprovement
+How can I improve my time management?,SelfImprovement
+How do I improve my time management skills?,SelfImprovement
+I want to build a better routine,SelfImprovement
+I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build ,SelfImprovement
+I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine.,SelfImprovement
+I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine. I want to build a better routine.,SelfImprovement
+I want to become more productive,SelfImprovement
+How do I become more productive?,SelfImprovement
+How can I become more productive?,SelfImprovement
+I want to become more productive. I want to become more productive.,SelfImprovement
+I want to build good habits,SelfImprovement
+How do I build good habits?,SelfImprovement
+How can I build good habits?,SelfImprovement
+I want to build good habits. What should I do?,SelfImprovement
+I want to become a better person,SelfImprovement
+I want to be a better person. I want to be a better person.,SelfImprovement
+I want to be a better person. I want to become a better person.,SelfImprovement
+How do I become a better person?,SelfImprovement
+I feel lonely and disconnected,Loneliness
+I feel lonely and disconnected.,Loneliness
+I feel lonely and disconnected from the world.,Loneliness
+I feel lonely. I feel disconnected.,Loneliness
+I feel like nobody understands me,Loneliness
+I feel like nobody understands me.,Loneliness
+Why do I feel like nobody understands me?,Loneliness
+I feel like no one understands me.,Loneliness
+I feel isolated,Loneliness
+I feel isolated.,Loneliness
+Why do I feel isolated?,Loneliness
+I feel isolated. How can I help myself?,Loneliness
+I don’t have anyone to talk to,Loneliness
+I don't have anyone to talk to. I don't have anyone to talk to.,Loneliness
+I don't have anyone to talk to.,Loneliness
+I don’t have anyone to talk to.,Loneliness
+I feel alone even in a crowd,Loneliness
+I feel alone even in a crowd.,Loneliness
+I feel alone in a crowd.,Loneliness
+I feel lonely even in a crowd.,Loneliness
+I miss my friends,Loneliness
+I miss my friends. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them.,Loneliness
+I miss my friends. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them.,Loneliness
+I miss my friends. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them. I miss them.,Loneliness
+I feel emotionally alone,Loneliness
+I feel emotionally alone.,Loneliness
+I feel emotionally alone. How do I cope with this?,Loneliness
+I feel emotionally alone. How can I overcome this?,Loneliness
+I feel ignored,Loneliness
+I feel ignored.,Loneliness
+Why do I feel ignored?,Loneliness
+I feel ignored. Why?,Loneliness
+I feel like I don’t belong,Loneliness
+I feel like I don't belong anymore.,Loneliness
+I feel like I don't belong anywhere.,Loneliness
+I feel like I don't belong.,Loneliness
+I feel like I have no support,Loneliness
+I feel like I have no support.,Loneliness
+I feel like I don't have any support.,Loneliness
+I feel like I have no support system.,Loneliness
+I am facing issues in my relationship,Relationship
+I am facing issues in my relationship. I am facing issues in my relationship.,Relationship
+I am facing issues in my relationship. I am facing issues in my relationship. I am facing issues in my relationship.,Relationship
+I am facing issues in my relationship. I am facing issues in my relationship. I am facing issues in my relationship. I am facing issues in my relationship.,Relationship
+I feel disconnected from my partner,Relationship
+I feel disconnected from my partner. What should I do?,Relationship
+Why do I feel disconnected from my partner?,Relationship
+I feel disconnected from my partner.,Relationship
+I don’t know how to communicate with my partner,Relationship
+How do I communicate with my partner?,Relationship
+How can I communicate with my partner?,Relationship
+I don't know how to communicate with my partner. What should I do?,Relationship
+I feel my partner doesn’t understand me,Relationship
+I feel like my partner doesn't understand me.,Relationship
+I feel like my partner doesn't understand me. I feel like he doesn't understand me.,Relationship
+I feel like my partner doesn't understand me. I feel like he doesn't understand me at all.,Relationship
+I am struggling with trust issues,Relationship
+I am struggling with trust issues.,Relationship
+I am struggling with trust issues. I am struggling with trust issues.,Relationship
+I am struggling with trust issues. I am struggling with trust issues. I am struggling with trust issues.,Relationship
+I feel emotionally distant from my partner,Relationship
+I feel emotionally distant from my partner. What should I do?,Relationship
+I feel emotionally distant from my partner.,Relationship
+I feel emotionally distant from my partner. How can I help him?,Relationship
+I am confused about my relationship,Relationship
+I am confused about my relationship with my best friend. What should I do?,Relationship
+I am confused about my relationship with my boyfriend. What should I do?,Relationship
+I am confused about my relationship with my boyfriend.,Relationship
+I feel hurt by my partner’s behavior,Relationship
+I feel hurt by my partner’s behavior.,Relationship
+Why do I feel hurt by my partner’s behavior?,Relationship
+I feel hurt by my partner’s behavior. What should I do?,Relationship
+I want to improve my relationship,Relationship
+How can I improve my relationship with my boyfriend?,Relationship
+How can I improve my relationship with my girlfriend?,Relationship
+How do I improve my relationship with my boyfriend?,Relationship
+I want advice for my relationship,Relationship
+I want advice for my relationship. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship.,Relationship
+I want advice for my relationship. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with her.,Relationship
+I want advice for my relationship. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a girl. I'm in a relationship with a,Relationship
+I feel physically tired and weak,Health
+I feel physically tired and weak.,Health
+I feel physically weak and tired.,Health
+Why do I feel so tired and weak?,Health
+I am not sleeping well,Health
+I am not sleeping well. What should I do?,Health
+Why am I not sleeping well?,Health
+I am not sleeping well.,Health
+I feel low on energy,Health
+I feel low on energy. What should I do?,Health
+Why do I feel low on energy?,Health
+I feel low on energy. How can I overcome this?,Health
+I feel like my health is deteriorating,Health
+I feel like my health is deteriorating.,Health
+Why is my health deteriorating?,Health
+I feel like my health is deteriorating. I can't stand it.,Health
+I need help improving my health,Health
+How can I improve my health?,Health
+What should I do to improve my health?,Health
+How do I improve my health?,Health
+I want to build a healthy lifestyle,Health
+How do I build a healthy lifestyle?,Health
+How can I build a healthy lifestyle?,Health
+I want to build a healthy lifestyle. What should I do?,Health
+I feel mentally drained,Health
+I feel mentally drained.,Health
+I feel mentally drained and depressed.,Health
+I feel mentally and physically drained.,Health
+I want to improve my diet,Health
+How can I improve my diet?,Health
+What should I do to improve my diet?,Health
+What can I do to improve my diet?,Health
+I want to start exercising,Health
+How do I start exercising?,Health
+I want to start exercising. How can I do that?,Health
+I want to start exercising. How can I do this?,Health
+I feel unhealthy and anxious,Health
+Why do I feel so anxious and unhealthy?,Health
+Why do I feel anxious and unhealthy?,Health
+I feel unhealthy and anxious.,Health
+I am worried about money,Finance
+I'm worried about money. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it.,Finance
+I'm worried about money. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about money. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it.,Finance
+I'm worried about money. I'm worried about it. I'm worried about it. I'm worried about money. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it. I'm worried about it.,Finance
+I don’t know how to manage my finances,Finance
+How do I manage my finances?,Finance
+How can I manage my finances?,Finance
+I don't know how to manage my finances. What should I do?,Finance
+I want to save money,Finance
+How do I save money?,Finance
+How can I save money?,Finance
+I want to save money. How can I do that?,Finance
+I want to invest but I don’t know how,Finance
+I want to invest but I don't know how to do it.,Finance
+I want to invest but I don't know how to do it. What should I do?,Finance
+"I want to invest, but I don't know how to do it.",Finance
+I have financial problems,Finance
+I have financial problems. What should I do?,Finance
+I have financial problems. How can I solve it?,Finance
+I have financial problems. How can I solve them?,Finance
+I want financial stability,Finance
+I want financial stability. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable.,Finance
+I want financial stability. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable.,Finance
+I want financial stability. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable. I want to be financially stable.,Finance
+I need help with budgeting,Finance
+I need help with budgeting.,Finance
+What is the best way to budget?,Finance
+I need help with my budgeting.,Finance
+I feel stressed about money,Finance
+Why do I feel stressed about money?,Finance
+Why do I feel so stressed about money?,Finance
+Why am I so stressed about money?,Finance
+I want to earn more money,Finance
+How can I earn more money?,Finance
+I want to earn money. How can I do that?,Finance
+How can I earn more money in a short time?,Finance
+I want to plan my expenses,Finance
+How do I plan my expenses?,Finance
+How can I plan my expenses?,Finance
+How do I plan for my expenses?,Finance
+I feel demotivated,Motivation
+I feel demotivated and demotivated.,Motivation
+I feel demotivated.,Motivation
+I feel demotivated and demotivated all the time.,Motivation
+I can’t stay motivated,Motivation
+Why can't I stay motivated?,Motivation
+How can I stay motivated?,Motivation
+How do I stay motivated?,Motivation
+I feel like giving up,Motivation
+I feel like giving up.,Motivation
+Why do I feel like giving up?,Motivation
+I feel like giving up. I feel like giving up.,Motivation
+I don’t feel like doing anything,Motivation
+I don't feel like doing anything. I don't feel like doing anything.,Motivation
+I don't feel like doing anything. I don't feel like doing anything. I don't feel like doing anything.,Motivation
+I don't feel like doing anything. I don't feel like doing anything. I don't feel like doing anything. I don't feel like doing anything. I don't feel like doing anything.,Motivation
+I feel lazy and unproductive,Motivation
+I feel lazy and unproductive.,Motivation
+I feel lazy and unproductive. What should I do?,Motivation
+I feel lazy and unproductive all the time.,Motivation
+mann nahi lag raha kisi kaam mein,Motivation
+kuch karna hi nahi chahta,Motivation
+energy nahi hai kuch karne ki,Motivation
+I want to get motivated,Motivation
+How do I get motivated?,Motivation
+How can I get motivated?,Motivation
+I want to get motivated. What should I do?,Motivation
+I want to find my purpose,Motivation
+I want to find my purpose. I want to find my purpose. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person.,Motivation
+I want to find my purpose. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better,Motivation
+I want to find my purpose. I want to be a better person. I want to be a better person. I want to be a better person. I want to find my purpose. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person. I want to be a better person.,Motivation
+I need motivation to study,Motivation
+Why do I need motivation to study?,Motivation
+I need motivation to study.,Motivation
+I need motivation to study. How can I get it?,Motivation
+I want to get back on track,Motivation
+How do I get back on track?,Motivation
+How can I get back on track?,Motivation
+I want to get back on track. I want to get back on track.,Motivation
+I want to build motivation habits,Motivation
+How do I build motivational habits?,Motivation
+How can I build motivational habits?,Motivation
+How do I develop motivational habits?,Motivation
+I am confused about my future,Confusion/DecisionMaking
+I am confused about my future. What should I do?,Confusion/DecisionMaking
+I am confused about my future.,Confusion/DecisionMaking
+I am confused about my future. I am confused about my future.,Confusion/DecisionMaking
+I can’t decide what to do,Confusion/DecisionMaking
+What should I do if I can't decide what to do?,Confusion/DecisionMaking
+I can't decide what to do. What should I do?,Confusion/DecisionMaking
+What should I do when I can't decide what to do?,Confusion/DecisionMaking
+I am unsure about my goals,Confusion/DecisionMaking
+I am unsure about my goals. What should I do?,Confusion/DecisionMaking
+What should I do if I am unsure about my goals?,Confusion/DecisionMaking
+I'm unsure about my goals. What should I do?,Confusion/DecisionMaking
+I am stuck and confused,Confusion/DecisionMaking
+I am stuck and confused. What should I do?,Confusion/DecisionMaking
+I am stuck and confused. What can I do?,Confusion/DecisionMaking
+I'm stuck and confused. What should I do?,Confusion/DecisionMaking
+I don’t know what decision to take,Confusion/DecisionMaking
+I don’t know what decision to make. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t,Confusion/DecisionMaking
+I don’t know what decision to take. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t,Confusion/DecisionMaking
+I don’t know what decision to make. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I don’t know what to do. I know what to,Confusion/DecisionMaking
+I need help making a decision,Confusion/DecisionMaking
+How do I make a decision?,Confusion/DecisionMaking
+I need help making a decision.,Confusion/DecisionMaking
+How do I make a good decision?,Confusion/DecisionMaking
+I am uncertain about my next step,Confusion/DecisionMaking
+I am uncertain about my next step. What should I do?,Confusion/DecisionMaking
+I am uncertain about my next step in life. What should I do?,Confusion/DecisionMaking
+What should I do next?,Confusion/DecisionMaking
+I feel lost,Confusion/DecisionMaking
+I feel like I'm lost.,Confusion/DecisionMaking
+I feel lost in my own world.,Confusion/DecisionMaking
+I feel lost.,Confusion/DecisionMaking
+I am confused about my life choices,Confusion/DecisionMaking
+I am confused about my life choices. What should I do?,Confusion/DecisionMaking
+I'm confused about my life choices. What should I do?,Confusion/DecisionMaking
+I'm confused about my life choices. I'm confused. What should I do?,Confusion/DecisionMaking
+I am not sure what to do next,Confusion/DecisionMaking
+What should I do next?,Confusion/DecisionMaking
+What will I do next?,Confusion/DecisionMaking
+What do I do next?,Confusion/DecisionMaking
+I feel stressed about exams,Stress
+I'm anxious about my upcoming test,Stress
+Exams are giving me so much pressure,Stress
+I can't handle exam stress anymore,Stress
+I'm overwhelmed with studies and exams,Stress
+I have exams coming up and I'm panicking,Stress
+My exam results are stressing me out,Stress
+I'm scared about failing my exams,Stress
+akela feel kar raha hoon,Loneliness
+koi baat nahi karta mujhse,Loneliness
+bahut akela lagta hai,Loneliness
+career ka pata nahi kya karun,Career
+job nahi mil rahi,Career
+future ke baare mein confused hoon,Career

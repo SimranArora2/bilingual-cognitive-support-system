@@ -1,0 +1,151 @@
+=== PATCH 1: Replace add_to_memory function ===
+
+OLD:
+def add_to_memory(user_input, intent, mood):
+    memory = get_session_memory()
+    memory.append({
+        "time": datetime.now().strftime("%H:%M"),
+        "text": user_input,
+        "intent": intent,
+        "mood": mood
+    })
+    session["memory"] = memory[-10:]
+
+NEW:
+def add_to_memory(user_input, intent, mood, response_type=""):
+    memory = get_session_memory()
+    memory.append({
+        "time": datetime.now().strftime("%H:%M"),
+        "text": user_input,
+        "intent": intent,
+        "mood": mood,
+        "response_type": response_type   # ← stores what type was used last
+    })
+    session["memory"] = memory[-10:]
+
+=== PATCH 2: Replace the generate + return block in /chat ===
+
+OLD:
+        # 🔹 Memory
+        add_to_memory(raw_input, primary_intent, mood)
+        history = get_session_memory()
+
+        # 🔹 Generate response
+        from action_engine import generate_action_plan
+        steps = generate_action_plan(detected_intents, confidence, mood, lang, mode)
+
+        return jsonify({
+            "intents": [{"name": i[0], "confidence": round(i[1] * 100, 1)} for i in detected_intents],
+            "intent": primary_intent,
+            "intent_emoji": INTENT_EMOJI.get(primary_intent, "🧠"),
+            "confidence": round(confidence, 1),
+            "mood": mood,
+            "mood_emoji": MOOD_EMOJI.get(mood, "😐"),
+            "steps": steps,
+            "returning": len(history) > 1,
+            "history_count": len(history),
+            "lang": lang,
+        })
+
+NEW:
+        # 🔹 Get history BEFORE adding current message
+        history = get_session_memory()
+
+        # 🔹 Generate response (pass history for context awareness)
+        from action_engine import generate_action_plan
+        steps, response_type = generate_action_plan(
+            detected_intents, confidence, mood, lang, mode,
+            user_input=raw_input, history=history
+        )
+
+        # 🔹 Store in memory WITH response_type
+        add_to_memory(raw_input, primary_intent, mood, response_type)
+
+        return jsonify({
+            "intents": [{"name": i[0], "confidence": round(i[1] * 100, 1)} for i in detected_intents],
+            "intent": primary_intent,
+            "intent_emoji": INTENT_EMOJI.get(primary_intent, "🧠"),
+            "confidence": round(confidence, 1),
+            "mood": mood,
+            "mood_emoji": MOOD_EMOJI.get(mood, "😐"),
+            "steps": steps,
+            "returning": len(history) > 1,
+            "history_count": len(history),
+            "lang": lang,
+        })
+
+=== PATCH 3: Replace /followup route ===
+
+OLD:
+@app.route("/followup", methods=["POST"])
+def followup():
+    from action_engine import generate_action_plan
+    data       = request.get_json()
+    mode       = data.get("mode", "normal")
+    lang       = data.get("lang", "en")
+    mood       = data.get("mood", "calm")
+    confidence = data.get("confidence", 80)
+    intents_raw = data.get("intents", [])
+
+    # Reconstruct detected_intents list
+    detected_intents = [(i["name"], i["confidence"] / 100) for i in intents_raw]
+    if not detected_intents:
+        detected_intents = [(data.get("intent", "Stress"), 0.8)]
+
+    primary_intent = detected_intents[0][0]
+
+    steps = generate_action_plan(
+        detected_intents, confidence, mood, lang, mode
+    )
+
+    return jsonify({
+        "intents":      [{"name": i[0], "confidence": round(i[1]*100,1)} for i in detected_intents],
+        "intent":       primary_intent,
+        "intent_emoji": INTENT_EMOJI.get(primary_intent, "🧠"),
+        "confidence":   round(confidence, 1),
+        "mood":         mood,
+        "mood_emoji":   MOOD_EMOJI.get(mood, "😐"),
+        "steps":        steps,
+        "returning":    True,
+        "lang":         lang
+    })
+
+NEW:
+@app.route("/followup", methods=["POST"])
+def followup():
+    from action_engine import generate_action_plan
+    data        = request.get_json()
+    mode        = data.get("mode", "normal")
+    lang        = data.get("lang", "en")
+    mood        = data.get("mood", "calm")
+    confidence  = data.get("confidence", 80)
+    intents_raw = data.get("intents", [])
+
+    detected_intents = [(i["name"], i["confidence"] / 100) for i in intents_raw]
+    if not detected_intents:
+        detected_intents = [(data.get("intent", "Stress"), 0.8)]
+
+    primary_intent = detected_intents[0][0]
+
+    # Pass full session history so follow-ups feel contextual
+    history = get_session_memory()
+
+    steps, response_type = generate_action_plan(
+        detected_intents, confidence, mood, lang, mode,
+        user_input="", history=history
+    )
+
+    # Store followup in memory too
+    add_to_memory(f"[followup:{mode}]", primary_intent, mood, response_type)
+
+    return jsonify({
+        "intents":      [{"name": i[0], "confidence": round(i[1]*100,1)} for i in detected_intents],
+        "intent":       primary_intent,
+        "intent_emoji": INTENT_EMOJI.get(primary_intent, "🧠"),
+        "confidence":   round(confidence, 1),
+        "mood":         mood,
+        "mood_emoji":   MOOD_EMOJI.get(mood, "😐"),
+        "steps":        steps,
+        "returning":    True,
+        "lang":         lang
+    })
