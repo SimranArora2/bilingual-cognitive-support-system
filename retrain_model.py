@@ -1,55 +1,84 @@
 import pandas as pd
 import json
-import pickle
+import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
+from sklearn.calibration import CalibratedClassifierCV
+from sklearn.model_selection import cross_val_score, StratifiedKFold
+from sklearn.pipeline import Pipeline
 
-# 🔹 Load main dataset
+# ─── Load main dataset ───────────────────────────────────────────────────────
 df = pd.read_csv("intent_data_expanded.csv")
+df = df.rename(columns={df.columns[0]: "user_input", df.columns[1]: "intent"})
 
-# Ensure correct column names
-df = df.rename(columns={
-    "text": "user_input",
-    "intent": "intent"
-})
-
-# 🔹 Load feedback (JSON)
+# ─── Load feedback (fix key mismatch bug) ────────────────────────────────────
+# Old entries used "user_input", newer ones use "input" — handle both
 feedback_data = []
 try:
     with open("feedback_data.json", "r") as f:
         feedback_data = json.load(f)
-except:
+except Exception:
     pass
 
-# Convert feedback to DataFrame (if exists)
 if feedback_data:
     df_feedback = pd.DataFrame(feedback_data)
-
-    # Keep only positive feedback
     df_feedback = df_feedback[df_feedback["feedback"] == "yes"]
 
-    # Merge with main dataset
-    df = pd.concat([df, df_feedback[["user_input", "intent"]]])
+    # Normalize: use "input" if present, else "user_input"
+    if "input" in df_feedback.columns and "user_input" not in df_feedback.columns:
+        df_feedback = df_feedback.rename(columns={"input": "user_input"})
+    elif "input" in df_feedback.columns and "user_input" in df_feedback.columns:
+        df_feedback["user_input"] = df_feedback["user_input"].fillna(df_feedback["input"])
 
-# 🔹 Clean data
+    df_feedback = df_feedback[["user_input", "intent"]].dropna()
+    df_feedback = df_feedback[df_feedback["user_input"].str.strip() != ""]
+
+    if not df_feedback.empty:
+        df = pd.concat([df, df_feedback], ignore_index=True)
+        print(f"✅ Merged {len(df_feedback)} positive feedback samples")
+
+# ─── Clean ───────────────────────────────────────────────────────────────────
 df = df.dropna(subset=["user_input", "intent"])
+df = df[df["user_input"].str.strip() != ""]
 
-print("Total training samples:", len(df))
-print(df.head())
+print(f"Total training samples: {len(df)}")
+print(df["intent"].value_counts())
 
-# 🔹 Train model
-vectorizer = TfidfVectorizer()
-X = vectorizer.fit_transform(df["user_input"])
+# ─── Build pipeline ──────────────────────────────────────────────────────────
+# KEY INSIGHT: char_wb n-grams (3-5 chars) outperform word n-grams for Hinglish.
+# Why: "ghabra", "ghabrahat", "ghabrana" all share the char pattern "ghabr" —
+# the model recognises anxiety-related Hinglish words even when spelled differently.
+# CalibratedClassifierCV wraps LinearSVC to provide predict_proba (needed by app.py).
+pipeline = Pipeline([
+    ("tfidf", TfidfVectorizer(
+        analyzer="char_wb",   # character-level — works natively on Hinglish
+        ngram_range=(3, 5),   # 3-to-5 character windows
+        sublinear_tf=True,    # log-scale TF weighting
+    )),
+    ("clf", CalibratedClassifierCV(
+        LinearSVC(max_iter=3000, C=1),
+        cv=3
+    ))
+])
+
+# ─── Cross-validate ───────────────────────────────────────────────────────────
+X = df["user_input"]
 y = df["intent"]
 
-model = LogisticRegression(max_iter=1000)
-model.fit(X, y)
+cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
+scores = cross_val_score(pipeline, X, y, cv=cv, scoring="accuracy")
+print(f"\n📊 Cross-validated accuracy: {scores.mean()*100:.2f}% ± {scores.std()*100:.2f}%")
+print(f"   Per fold: {[round(s*100,1) for s in scores]}")
 
-# 🔹 Save model
-with open("model.pkl", "wb") as f:
-    pickle.dump(model, f)
+# ─── Train on full dataset ────────────────────────────────────────────────────
+pipeline.fit(X, y)
 
-with open("vectorizer.pkl", "wb") as f:
-    pickle.dump(vectorizer, f)
+# ─── Save (app.py expects separate model.pkl and vectorizer.pkl) ──────────────
+vectorizer = pipeline.named_steps["tfidf"]
+model      = pipeline.named_steps["clf"]
 
-print("✅ Model retrained successfully!")
+joblib.dump(model,      "model.pkl")
+joblib.dump(vectorizer, "vectorizer.pkl")
+
+print("\n✅ Model retrained! (char n-grams 3-5 + LinearSVC)")
+print("   model.pkl and vectorizer.pkl saved.")

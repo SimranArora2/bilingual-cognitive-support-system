@@ -1,34 +1,34 @@
 text,intent
-"mujhe bahut dar lag raha hai",Stress
-"bohot anxiety ho rahi hai",Stress
-"andar se ghabrahat ho rahi hai",Stress
-"heart fast dhadak raha hai darr se",Stress
-"lagta hai kuch galat hone wala hai",Stress
-"bahut zyada tension aur darr hai",Stress
-"i feel scared and anxious",Stress
-"i am feeling very nervous and afraid",Stress
-"work load bahut zyada badh gaya hai",Stress
-"i am feeling so burnt out lately",Stress
-"raat ko neend nahi aati tension ki wajah se",Stress
-"dimag bilkul phat raha hai itni chinta hai",Stress
-"too much pressure at the office",Stress
-"man bahut bhari bhari lag raha hai",Stress
-"everything is overwhelming me right now",Stress
-"chhoti chhoti baat par gussa aa raha hai",Stress
-"i can't stop overthinking everything",Stress
-"itna zyada stress handle nahi ho raha",Stress
-"pata nahi future mein kya hoga darr lag raha hai",Stress
-"i feel like i am under a lot of pressure",Stress
-"office ki deadlines khatam hi nahi ho rahi",Stress
-"dil ki dhadkan badh rahi hai ghabrahat se",Stress
-"i am losing my peace of mind",Stress
-"ghar ki problems ki wajah se bahut tension hai",Stress
-"constant headache ho raha hai stress se",Stress
-"i feel like crying for no reason",Stress
-"exams ka darr sataye ja raha hai",Stress
-"i am at my breaking point",Stress
-"itna shor hai dimaag mein sukoon nahi hai",Stress
-"i feel so restless these days",Stress
+mujhe bahut dar lag raha hai,Stress
+bohot anxiety ho rahi hai,Stress
+andar se ghabrahat ho rahi hai,Stress
+heart fast dhadak raha hai darr se,Stress
+lagta hai kuch galat hone wala hai,Stress
+bahut zyada tension aur darr hai,Stress
+i feel scared and anxious,Stress
+i am feeling very nervous and afraid,Stress
+work load bahut zyada badh gaya hai,Stress
+i am feeling so burnt out lately,Stress
+raat ko neend nahi aati tension ki wajah se,Stress
+dimag bilkul phat raha hai itni chinta hai,Stress
+too much pressure at the office,Stress
+man bahut bhari bhari lag raha hai,Stress
+everything is overwhelming me right now,Stress
+chhoti chhoti baat par gussa aa raha hai,Stress
+i can't stop overthinking everything,Stress
+itna zyada stress handle nahi ho raha,Stress
+pata nahi future mein kya hoga darr lag raha hai,Stress
+i feel like i am under a lot of pressure,Stress
+office ki deadlines khatam hi nahi ho rahi,Stress
+dil ki dhadkan badh rahi hai ghabrahat se,Stress
+i am losing my peace of mind,Stress
+ghar ki problems ki wajah se bahut tension hai,Stress
+constant headache ho raha hai stress se,Stress
+i feel like crying for no reason,Stress
+exams ka darr sataye ja raha hai,Stress
+i am at my breaking point,Stress
+itna shor hai dimaag mein sukoon nahi hai,Stress
+i feel so restless these days,Stress
 mujhe bahut tension hai,Stress
 mujhe stress ho raha hai,Stress
 bahut tension hai,Stress
@@ -37,245 +37,245 @@ dimag kharab ho raha hai,Stress
 bahut pressure feel ho raha hai,Stress
 ghabra raha hoon,Stress
 sab kuch overwhelming lag raha hai,Stress
-"sirf negative thoughts hi aa rahe hain",Stress
-"too many responsibilities on my shoulders",Stress
-"i am struggling to keep it together",Stress
-"exams ke liye kaise prepare karun?",Learning
-"i am struggling to understand this topic",Learning
-"coding seekhne ka sabse accha tareeka kya hai?",Learning
-"mujhe maths bilkul samajh nahi aata",Learning
-"how to improve my communication skills?",Learning
-"revision karne ka time nahi mil raha",Learning
-"concepts clear nahi ho rahe hain",Learning
-"i want to learn a new language",Learning
-"online courses suggest kijiye",Learning
-"notes banane mein problem ho rahi hai",Learning
-"concentration nahi ban paa rahi padhai mein",Learning
-"how can i score better in finals?",Learning
-"biology ke diagrams bahut mushkil hain",Learning
-"i need a study timetable",Learning
-"complex formulas yaad nahi rehte",Learning
-"merai basics bahut weak hain",Learning
-"mujhe history bore lagti hai",Learning
-"how to read faster and retain more?",Learning
-"grammar mein bahut galtiyan hoti hain",Learning
-"i want to upgrade my skills",Learning
-"kahan se start karun padhna?",Learning
-"ye project kaise complete hoga?",Learning
-"i need a tutor for physics",Learning
-"book padhne ka mann karta hai par focus nahi hota",Learning
-"effective way to learn data science",Learning
-"i feel so isolated from everyone",Loneliness
-"koi mujhse baat nahi karta",Loneliness
-"i have no friends to share my feelings",Loneliness
-"feeling very lonely tonight",Loneliness
-"sabke beech hokar bhi akela lagta hai",Loneliness
-"i miss having someone to talk to",Loneliness
-"ghar pe sab busy rehte hain",Loneliness
-"i feel like an outsider everywhere",Loneliness
-"tanhai se darr lagne laga hai",Loneliness
-"no one really understands me",Loneliness
-"i am spending all my time alone",Loneliness
-"kisi ka saath chahiye bas",Loneliness
-"i feel disconnected from the world",Loneliness
-"sab dost badal gaye hain",Loneliness
-"i have no one to call in an emergency",Loneliness
-"akelaapan khaaye ja raha hai",Loneliness
-"social media dekh kar aur akela lagta hai",Loneliness
-"i wish i had a best friend",Loneliness
-"room mein akele baithe rehna pasand nahi",Loneliness
-"i feel ignored by my colleagues",Loneliness
-"no one checked on me today",Loneliness
-"it's hard being alone all the time",Loneliness
-"everyone else has someone except me",Loneliness
-"long distance ki wajah se akela feel hota hai",Loneliness
-"i feel invisible to others",Loneliness
-"kya mai job lu ya padhai karun",Confusion/DecisionMaking
+sirf negative thoughts hi aa rahe hain,Stress
+too many responsibilities on my shoulders,Stress
+i am struggling to keep it together,Stress
+exams ke liye kaise prepare karun?,Learning
+i am struggling to understand this topic,Learning
+coding seekhne ka sabse accha tareeka kya hai?,Learning
+mujhe maths bilkul samajh nahi aata,Learning
+how to improve my communication skills?,Learning
+revision karne ka time nahi mil raha,Learning
+concepts clear nahi ho rahe hain,Learning
+i want to learn a new language,Learning
+online courses suggest kijiye,Learning
+notes banane mein problem ho rahi hai,Learning
+concentration nahi ban paa rahi padhai mein,Learning
+how can i score better in finals?,Learning
+biology ke diagrams bahut mushkil hain,Learning
+i need a study timetable,Learning
+complex formulas yaad nahi rehte,Learning
+merai basics bahut weak hain,Learning
+mujhe history bore lagti hai,Learning
+how to read faster and retain more?,Learning
+grammar mein bahut galtiyan hoti hain,Learning
+i want to upgrade my skills,Learning
+kahan se start karun padhna?,Learning
+ye project kaise complete hoga?,Learning
+i need a tutor for physics,Learning
+book padhne ka mann karta hai par focus nahi hota,Learning
+effective way to learn data science,Learning
+i feel so isolated from everyone,Loneliness
+koi mujhse baat nahi karta,Loneliness
+i have no friends to share my feelings,Loneliness
+feeling very lonely tonight,Loneliness
+sabke beech hokar bhi akela lagta hai,Loneliness
+i miss having someone to talk to,Loneliness
+ghar pe sab busy rehte hain,Loneliness
+i feel like an outsider everywhere,Loneliness
+tanhai se darr lagne laga hai,Loneliness
+no one really understands me,Loneliness
+i am spending all my time alone,Loneliness
+kisi ka saath chahiye bas,Loneliness
+i feel disconnected from the world,Loneliness
+sab dost badal gaye hain,Loneliness
+i have no one to call in an emergency,Loneliness
+akelaapan khaaye ja raha hai,Loneliness
+social media dekh kar aur akela lagta hai,Loneliness
+i wish i had a best friend,Loneliness
+room mein akele baithe rehna pasand nahi,Loneliness
+i feel ignored by my colleagues,Loneliness
+no one checked on me today,Loneliness
+it's hard being alone all the time,Loneliness
+everyone else has someone except me,Loneliness
+long distance ki wajah se akela feel hota hai,Loneliness
+i feel invisible to others,Loneliness
+kya mai job lu ya padhai karun,Confusion/DecisionMaking
 kya karun samajh nahi aa raha,Confusion/DecisionMaking
 samajh nahi aa raha kya karun,Confusion/DecisionMaking
 kuch samajh nahi aa raha,Confusion/DecisionMaking
 bahut confused hoon,Confusion/DecisionMaking
 koi guidance nahi hai,Confusion/DecisionMaking
 faisla nahi ho pa raha,Confusion/DecisionMaking
-"should i study or take a job",Confusion/DecisionMaking
-"career decision samajh nahi aa raha",Confusion/DecisionMaking
-"do options me confuse hoon",Confusion/DecisionMaking
-"which path should i choose",Confusion/DecisionMaking
-"i don't know what to choose",Confusion/DecisionMaking
-"career aur passion mein se kya chunoon?",Confusion/DecisionMaking
-"i am stuck between two options",Confusion/DecisionMaking
-"kya mujhe ye job chhod deni chahiye?",Confusion/DecisionMaking
-"i am so confused about my life",Confusion/DecisionMaking
-"samajh nahi aa raha sahi kya hai galat kya",Confusion/DecisionMaking
-"should i move to a new city?",Confusion/DecisionMaking
-"dimag kuch keh raha hai aur dil kuch aur",Confusion/DecisionMaking
-"it's hard to make a final call",Confusion/DecisionMaking
-"i keep changing my mind",Confusion/DecisionMaking
-"confused hoon ki science loon ya commerce",Confusion/DecisionMaking
-"is it worth taking a risk?",Confusion/DecisionMaking
-"faisla lene mein darr lag raha hai",Confusion/DecisionMaking
-"i need clarity on this situation",Confusion/DecisionMaking
-"pata nahi mera rasta kahan ja raha hai",Confusion/DecisionMaking
-"too many choices are making me anxious",Confusion/DecisionMaking
-"should i marry now or wait?",Confusion/DecisionMaking
-"kya ye mere liye sahi investment hai?",Confusion/DecisionMaking
-"i am questioning my choices",Confusion/DecisionMaking
-"options dekh kar dimaag ghum raha hai",Confusion/DecisionMaking
-"how to decide the best path for me?",Confusion/DecisionMaking
-"faisla galat ho gaya toh kya hoga?",Confusion/DecisionMaking
-"i need someone to guide my decision",Confusion/DecisionMaking
-"uncertainty ki wajah se pareshan hoon",Confusion/DecisionMaking
-"which college should i pick?",Confusion/DecisionMaking
-"mere paas koi goals nahi hain",Motivation
-"i feel like giving up on everything",Motivation
-"kaam karne ka mann nahi karta",Motivation
-"how to stay motivated every day?",Motivation
-"life mein koi purpose nahi lag raha",Motivation
-"i am feeling very low and lazy",Motivation
-"kuch bada karna hai par start nahi kar pa raha",Motivation
-"i need some inspiration to work",Motivation
-"sab thik ho jayega na?",Motivation
-"i feel like a failure in life",Motivation
-"apne aap par bharosa nahi ho raha",Motivation
-"how to stop procrastinating?",Motivation
-"i have lost my spark",Motivation
-"mujhe lagta hai main kuch nahi kar sakta",Motivation
-"i need a push to start exercising",Motivation
-"sapne toh bahut hain par himmat nahi",Motivation
-"i am tired of being average",Motivation
-"why am i so demotivated?",Motivation
-"dusron ko dekh kar lagta hai main peeche hoon",Motivation
-"i want to change my life for the better",Motivation
-"energetic feel nahi ho raha",Motivation
-"kuch karne ki iccha hi mar gayi hai",Motivation
-"how to stay positive in bad times?",Motivation
-"i need a reason to keep going",Motivation
-"mujhe khud ko prove karna hai",Motivation
-"market mein jobs nahi mil rahi hain",Career
-"is my current field good for the future?",Career
-"i want to switch from IT to management",Career
-"salary growth nahi ho rahi hai",Career
-"how to prepare for a big interview?",Career
-"career growth ruk gayi hai",Career
-"i am worried about layoffs",Career
-"freelancing start karun ya job?",Career
-"resume mein kya changes karun?",Career
-"promotion kab milega pata nahi",Career
-"i want to start my own business",Career
-"skills upgrade kaise karun for career?",Career
-"i feel stuck in a dead-end job",Career
-"is a master's degree worth it now?",Career
-"office politics career kharab kar rahi hai",Career
-"i want to work abroad",Career
-"startup join karna sahi rahega?",Career
-"career change karne mein darr lag raha hai",Career
-"how to negotiate salary?",Career
-"mujhe coding jobs mein interest hai",Career
-"networking kaise badhaun career ke liye?",Career
-"i am confused about my niche",Career
-"part-time job options kya hain?",Career
-"internship nahi mil rahi hai",Career
-"career orientation ki zaroorat hai",Career
-"monthly budget manage nahi ho raha",Finance
-"loans ki wajah se bahut pareshan hoon",Finance
-"paisa kahan kharch ho raha hai pata nahi chalta",Finance
-"i need to save more money",Finance
-"investing kahan se start karun?",Finance
-"bank balance kam hota ja raha hai",Finance
-"credit card bills are piling up",Finance
-"paisa bacha nahi pa raha hoon",Finance
-"financial stability kaise milegi?",Finance
-"too many unexpected expenses",Finance
-"stock market mein paisa lagana chahiye?",Finance
-"mere upar bahut karz hai",Finance
-"how to create a passive income?",Finance
-"salary aate hi khatam ho jati hai",Finance
-"i am worried about my retirement",Finance
-"paisa kamane ka koi naya tareeka?",Finance
-"insurance lena zaroori hai kya?",Finance
-"tax bachaane ke tips chahiye",Finance
-"inflation ki wajah se kharcha badh gaya hai",Finance
-"i feel broke all the time",Finance
-"emergency fund kaise banaye?",Finance
-"gold mein invest karna kaisa rahega?",Finance
-"family expenses manage nahi ho rahe",Finance
-"i need advice on mutual funds",Finance
-"financial crisis chal rahi hai",Finance
-"pet mein dard ho raha hai subah se",Health
-"i am feeling very weak lately",Health
-"weight loss kaise karun jaldi?",Health
-"diet plan suggest kijiye for weight gain",Health
-"mental health par dhyan dena hai",Health
-"body pain ki wajah se kaam nahi ho raha",Health
-"i am suffering from chronic back pain",Health
-"baal bahut jhad rahe hain",Health
-"i need to quit my smoking habit",Health
-"skin infections ho rahe hain bar bar",Health
-"how to improve my immune system?",Health
-"sugar levels control nahi ho rahe",Health
-"i feel dizzy all the time",Health
-"eyesight week ho rahi hai screen time se",Health
-"yoga ke kya benefits hain?",Health
-"gym join karun ya ghar par workout?",Health
-"i have high blood pressure issues",Health
-"doctor se kab consult karna chahiye?",Health
-"thakan bahut jaldi ho jati hai",Health
-"i want to lead a healthy lifestyle",Health
-"digestion ki problem hai bahut",Health
-"pairo mein sujan aa gayi hai",Health
-"i am not eating properly",Health
-"allergies ki wajah se pareshan hoon",Health
-"heavy feeling in my chest",Health
-"partner ke saath roz jhagda hota hai",Relationship
-"i think my partner is cheating on me",Relationship
-"long distance relationship manage nahi ho raha",Relationship
-"how to move on after a breakup?",Relationship
-"parents shaadi ke liye force kar rahe hain",Relationship
-"i am in a toxic relationship",Relationship
-"humare beech communication gap hai",Relationship
-"trust issues ho rahe hain bohot",Relationship
-"i want to propose but i am scared",Relationship
-"meri family partner ko accept nahi kar rahi",Relationship
-"relationship mein interest khatam ho raha hai",Relationship
-"how to fix a broken relationship?",Relationship
-"my friend betrayed my trust",Relationship
-"breakup se kaise bahar aau?",Relationship
-"husband/wife ke saath banti nahi hai",Relationship
-"i feel ignored by my partner",Relationship
-"should i give a second chance?",Relationship
-"social anxiety ki wajah se date nahi kar pata",Relationship
-"feeling heartbroken and sad",Relationship
-"meri personal life disturb ho gayi hai",Relationship
-"we fight over small things",Relationship
-"compatibility issues ho rahe hain",Relationship
-"how to tell my parents about my boyfriend?",Relationship
-"i miss my ex so much",Relationship
-"kya humein break lena chahiye?",Relationship
-"log mere baare mein kya sochenge?",SocialAnxiety
-"i am scared of public speaking",SocialAnxiety
-"party mein jane mein darr lagta hai",SocialAnxiety
-"i can't make eye contact with strangers",SocialAnxiety
-"logon se baat karne mein pasina aata hai",SocialAnxiety
-"i feel like everyone is judging me",SocialAnxiety
-"clipping my words while talking",SocialAnxiety
-"i prefer staying at home alone",SocialAnxiety
-"social gatherings are very draining",SocialAnxiety
-"how to be more confident in a crowd?",SocialAnxiety
-"presentation dete waqt haath kaampte hain",SocialAnxiety
-"i overthink every social interaction",SocialAnxiety
-"phone par baat karne mein darr lagta hai",SocialAnxiety
-"i hate being the center of attention",SocialAnxiety
-"anxious feeling in a room full of people",SocialAnxiety
-"kaise socialize karun samajh nahi aata",SocialAnxiety
-"i feel awkward in conversations",SocialAnxiety
-"do i sound stupid when i talk?",SocialAnxiety
-"i am afraid of rejection",SocialAnxiety
-"ajnabi logon se kaise milun?",SocialAnxiety
-"i don't know how to start a conversation",SocialAnxiety
-"social life bilkul zero hai",SocialAnxiety
-"groups mein chup rehta hoon hamesha",SocialAnxiety
-"introvert hona problem ban gaya hai",SocialAnxiety
-"crowded places mein panic hota hai",SocialAnxiety
+should i study or take a job,Confusion/DecisionMaking
+career decision samajh nahi aa raha,Confusion/DecisionMaking
+do options me confuse hoon,Confusion/DecisionMaking
+which path should i choose,Confusion/DecisionMaking
+i don't know what to choose,Confusion/DecisionMaking
+career aur passion mein se kya chunoon?,Confusion/DecisionMaking
+i am stuck between two options,Confusion/DecisionMaking
+kya mujhe ye job chhod deni chahiye?,Confusion/DecisionMaking
+i am so confused about my life,Confusion/DecisionMaking
+samajh nahi aa raha sahi kya hai galat kya,Confusion/DecisionMaking
+should i move to a new city?,Confusion/DecisionMaking
+dimag kuch keh raha hai aur dil kuch aur,Confusion/DecisionMaking
+it's hard to make a final call,Confusion/DecisionMaking
+i keep changing my mind,Confusion/DecisionMaking
+confused hoon ki science loon ya commerce,Confusion/DecisionMaking
+is it worth taking a risk?,Confusion/DecisionMaking
+faisla lene mein darr lag raha hai,Confusion/DecisionMaking
+i need clarity on this situation,Confusion/DecisionMaking
+pata nahi mera rasta kahan ja raha hai,Confusion/DecisionMaking
+too many choices are making me anxious,Confusion/DecisionMaking
+should i marry now or wait?,Confusion/DecisionMaking
+kya ye mere liye sahi investment hai?,Confusion/DecisionMaking
+i am questioning my choices,Confusion/DecisionMaking
+options dekh kar dimaag ghum raha hai,Confusion/DecisionMaking
+how to decide the best path for me?,Confusion/DecisionMaking
+faisla galat ho gaya toh kya hoga?,Confusion/DecisionMaking
+i need someone to guide my decision,Confusion/DecisionMaking
+uncertainty ki wajah se pareshan hoon,Confusion/DecisionMaking
+which college should i pick?,Confusion/DecisionMaking
+mere paas koi goals nahi hain,Motivation
+i feel like giving up on everything,Motivation
+kaam karne ka mann nahi karta,Motivation
+how to stay motivated every day?,Motivation
+life mein koi purpose nahi lag raha,Motivation
+i am feeling very low and lazy,Motivation
+kuch bada karna hai par start nahi kar pa raha,Motivation
+i need some inspiration to work,Motivation
+sab thik ho jayega na?,Motivation
+i feel like a failure in life,Motivation
+apne aap par bharosa nahi ho raha,Motivation
+how to stop procrastinating?,Motivation
+i have lost my spark,Motivation
+mujhe lagta hai main kuch nahi kar sakta,Motivation
+i need a push to start exercising,Motivation
+sapne toh bahut hain par himmat nahi,Motivation
+i am tired of being average,Motivation
+why am i so demotivated?,Motivation
+dusron ko dekh kar lagta hai main peeche hoon,Motivation
+i want to change my life for the better,Motivation
+energetic feel nahi ho raha,Motivation
+kuch karne ki iccha hi mar gayi hai,Motivation
+how to stay positive in bad times?,Motivation
+i need a reason to keep going,Motivation
+mujhe khud ko prove karna hai,Motivation
+market mein jobs nahi mil rahi hain,Career
+is my current field good for the future?,Career
+i want to switch from IT to management,Career
+salary growth nahi ho rahi hai,Career
+how to prepare for a big interview?,Career
+career growth ruk gayi hai,Career
+i am worried about layoffs,Career
+freelancing start karun ya job?,Career
+resume mein kya changes karun?,Career
+promotion kab milega pata nahi,Career
+i want to start my own business,Career
+skills upgrade kaise karun for career?,Career
+i feel stuck in a dead-end job,Career
+is a master's degree worth it now?,Career
+office politics career kharab kar rahi hai,Career
+i want to work abroad,Career
+startup join karna sahi rahega?,Career
+career change karne mein darr lag raha hai,Career
+how to negotiate salary?,Career
+mujhe coding jobs mein interest hai,Career
+networking kaise badhaun career ke liye?,Career
+i am confused about my niche,Career
+part-time job options kya hain?,Career
+internship nahi mil rahi hai,Career
+career orientation ki zaroorat hai,Career
+monthly budget manage nahi ho raha,Finance
+loans ki wajah se bahut pareshan hoon,Finance
+paisa kahan kharch ho raha hai pata nahi chalta,Finance
+i need to save more money,Finance
+investing kahan se start karun?,Finance
+bank balance kam hota ja raha hai,Finance
+credit card bills are piling up,Finance
+paisa bacha nahi pa raha hoon,Finance
+financial stability kaise milegi?,Finance
+too many unexpected expenses,Finance
+stock market mein paisa lagana chahiye?,Finance
+mere upar bahut karz hai,Finance
+how to create a passive income?,Finance
+salary aate hi khatam ho jati hai,Finance
+i am worried about my retirement,Finance
+paisa kamane ka koi naya tareeka?,Finance
+insurance lena zaroori hai kya?,Finance
+tax bachaane ke tips chahiye,Finance
+inflation ki wajah se kharcha badh gaya hai,Finance
+i feel broke all the time,Finance
+emergency fund kaise banaye?,Finance
+gold mein invest karna kaisa rahega?,Finance
+family expenses manage nahi ho rahe,Finance
+i need advice on mutual funds,Finance
+financial crisis chal rahi hai,Finance
+pet mein dard ho raha hai subah se,Health
+i am feeling very weak lately,Health
+weight loss kaise karun jaldi?,Health
+diet plan suggest kijiye for weight gain,Health
+mental health par dhyan dena hai,Health
+body pain ki wajah se kaam nahi ho raha,Health
+i am suffering from chronic back pain,Health
+baal bahut jhad rahe hain,Health
+i need to quit my smoking habit,Health
+skin infections ho rahe hain bar bar,Health
+how to improve my immune system?,Health
+sugar levels control nahi ho rahe,Health
+i feel dizzy all the time,Health
+eyesight week ho rahi hai screen time se,Health
+yoga ke kya benefits hain?,Health
+gym join karun ya ghar par workout?,Health
+i have high blood pressure issues,Health
+doctor se kab consult karna chahiye?,Health
+thakan bahut jaldi ho jati hai,Health
+i want to lead a healthy lifestyle,Health
+digestion ki problem hai bahut,Health
+pairo mein sujan aa gayi hai,Health
+i am not eating properly,Health
+allergies ki wajah se pareshan hoon,Health
+heavy feeling in my chest,Health
+partner ke saath roz jhagda hota hai,Relationship
+i think my partner is cheating on me,Relationship
+long distance relationship manage nahi ho raha,Relationship
+how to move on after a breakup?,Relationship
+parents shaadi ke liye force kar rahe hain,Relationship
+i am in a toxic relationship,Relationship
+humare beech communication gap hai,Relationship
+trust issues ho rahe hain bohot,Relationship
+i want to propose but i am scared,Relationship
+meri family partner ko accept nahi kar rahi,Relationship
+relationship mein interest khatam ho raha hai,Relationship
+how to fix a broken relationship?,Relationship
+my friend betrayed my trust,Relationship
+breakup se kaise bahar aau?,Relationship
+husband/wife ke saath banti nahi hai,Relationship
+i feel ignored by my partner,Relationship
+should i give a second chance?,Relationship
+social anxiety ki wajah se date nahi kar pata,Relationship
+feeling heartbroken and sad,Relationship
+meri personal life disturb ho gayi hai,Relationship
+we fight over small things,Relationship
+compatibility issues ho rahe hain,Relationship
+how to tell my parents about my boyfriend?,Relationship
+i miss my ex so much,Relationship
+kya humein break lena chahiye?,Relationship
+log mere baare mein kya sochenge?,SocialAnxiety
+i am scared of public speaking,SocialAnxiety
+party mein jane mein darr lagta hai,SocialAnxiety
+i can't make eye contact with strangers,SocialAnxiety
+logon se baat karne mein pasina aata hai,SocialAnxiety
+i feel like everyone is judging me,SocialAnxiety
+clipping my words while talking,SocialAnxiety
+i prefer staying at home alone,SocialAnxiety
+social gatherings are very draining,SocialAnxiety
+how to be more confident in a crowd?,SocialAnxiety
+presentation dete waqt haath kaampte hain,SocialAnxiety
+i overthink every social interaction,SocialAnxiety
+phone par baat karne mein darr lagta hai,SocialAnxiety
+i hate being the center of attention,SocialAnxiety
+anxious feeling in a room full of people,SocialAnxiety
+kaise socialize karun samajh nahi aata,SocialAnxiety
+i feel awkward in conversations,SocialAnxiety
+do i sound stupid when i talk?,SocialAnxiety
+i am afraid of rejection,SocialAnxiety
+ajnabi logon se kaise milun?,SocialAnxiety
+i don't know how to start a conversation,SocialAnxiety
+social life bilkul zero hai,SocialAnxiety
+groups mein chup rehta hoon hamesha,SocialAnxiety
+introvert hona problem ban gaya hai,SocialAnxiety
+crowded places mein panic hota hai,SocialAnxiety
 I want to learn something new but don’t know where to start,Learning
 I want to learn something new but don't know where to start.,Learning
 "I want to learn something new, but don't know where to start.",Learning
@@ -693,3 +693,228 @@ bahut akela lagta hai,Loneliness
 career ka pata nahi kya karun,Career
 job nahi mil rahi,Career
 future ke baare mein confused hoon,Career
+I feel nervous talking to people,SocialAnxiety
+I get anxious in social situations,SocialAnxiety
+I am scared of public speaking,SocialAnxiety
+I feel judged when I am around people,SocialAnxiety
+I avoid going out because of anxiety,SocialAnxiety
+meeting new people makes me very uncomfortable,SocialAnxiety
+I panic in crowded places,SocialAnxiety
+log kya sochenge yeh darr rehta hai,SocialAnxiety
+public mein bolne se darr lagta hai,SocialAnxiety
+logo se milna bahut mushkil lagta hai,SocialAnxiety
+I feel awkward in group conversations,SocialAnxiety
+I freeze up when everyone looks at me,SocialAnxiety
+I hate being the center of attention,SocialAnxiety
+social gatherings make me want to hide,SocialAnxiety
+I overthink every conversation I have,SocialAnxiety
+baat karte waqt bahut nervous ho jata hoon,SocialAnxiety
+class mein bolne se bahut darr lagta hai,SocialAnxiety
+interview mein bahut ghabra jata hoon,SocialAnxiety
+log mujhe judge karenge yeh sochta rehta hoon,SocialAnxiety
+friends ke sath bhi awkward feel hota hai,SocialAnxiety
+I feel like everyone is watching and judging me,SocialAnxiety
+I rehearse conversations in my head before having them,SocialAnxiety
+I feel my heart racing when I have to speak up,SocialAnxiety
+I avoid phone calls because they make me anxious,SocialAnxiety
+I feel embarrassed very easily around others,SocialAnxiety
+presentation deni hoti hai toh raat bhar neend nahi aati,SocialAnxiety
+log mujhse baat karein toh main ghabra jata hoon,SocialAnxiety
+apni baat express nahi kar pata logo ke saamne,SocialAnxiety
+college mein haath uthane se darr lagta hai,SocialAnxiety
+koi dekh raha ho toh kaam karna mushkil ho jata hai,SocialAnxiety
+I have not been sleeping well lately,Health
+my back hurts all the time,Health
+I feel physically weak and tired every day,Health
+I keep getting headaches,Health
+I am not eating properly,Health
+neend bilkul nahi aa rahi,Health
+pet mein dard rehta hai,Health
+bahut kamzori feel hoti hai,Health
+I want to start exercising but don't know how,Health
+my diet has been terrible lately,Health
+I feel exhausted even after sleeping,Health
+I have no energy to do anything physical,Health
+Sir dard ho raha hai bahut,Health
+tabiyat theek nahi lag rahi,Health
+main apni health ka dhyan nahi rakh pa raha,Health
+I don't know what to do after graduation,Career
+should I go for higher studies or a job,Career
+I feel stuck in my current job,Career
+mujhe job mein growth nahi dikh rahi,Career
+I want to switch careers but I am scared,Career
+koi achhi job nahi mil rahi,Career
+placement season hai aur main bahut stressed hoon,Career
+I have no idea what skills to learn for my career,Career
+my career feels directionless,Career
+I don't know if I chose the right field,Career
+kya mujhe MBA karna chahiye ya seedha job,Career
+resume banane mein help chahiye,Career
+interview mein baar baar reject ho raha hoon,Career
+I feel behind compared to my peers career-wise,Career
+apna passion aur career kaise balance karoon,Career
+I cannot make up my mind about anything,Confusion/DecisionMaking
+every option seems equally good and bad,Confusion/DecisionMaking
+I keep going back and forth on this decision,Confusion/DecisionMaking
+kya karna sahi rahega samajh nahi aa raha,Confusion/DecisionMaking
+do options hain dono ke apne pros cons hain,Confusion/DecisionMaking
+I am overthinking this decision too much,Confusion/DecisionMaking
+I need help deciding between two paths,Confusion/DecisionMaking
+mera dimaag ek decision pe atka hua hai,Confusion/DecisionMaking
+I feel paralyzed when I have to choose,Confusion/DecisionMaking
+har baar decide karne ki koshish karta hoon aur fail ho jata hoon,Confusion/DecisionMaking
+I second guess every decision I make,Confusion/DecisionMaking
+what if I make the wrong choice,Confusion/DecisionMaking
+I wish someone could just tell me what to do,Confusion/DecisionMaking
+sahi galat ka pata hi nahi chal raha,Confusion/DecisionMaking
+life mein koi clarity nahi hai,Confusion/DecisionMaking
+deadlines are piling up and I cannot handle it,Stress
+I feel like I am drowning in responsibilities,Stress
+sab kuch ek saath ho raha hai aur main thak gaya hoon,Stress
+bahut zyada kaam hai aur time kam hai,Stress
+I am burning out from too much pressure,Stress
+mujhe lagta hai main sab kuch control kho raha hoon,Stress
+I cannot relax even when I try,Stress
+tension itni hai ki sar dard rehta hai,Stress
+I snap at people because I am so stressed,Stress
+har cheez ek saath theek karni hai aur ho nahi raha,Stress
+I have too many deadlines and not enough time,Stress
+work pressure is getting to me physically,Stress
+I feel chest tightness from all the pressure,Stress
+I cannot sleep because my mind won't stop racing,Stress
+itna kaam hai ki sans lene ki fursat nahi,Stress
+deadline kal hai aur kuch complete nahi hua,Stress
+exam ke time pe sab ek saath aa jaata hai,Stress
+I feel physically sick from the amount of stress I have,Stress
+nobody checks on me anymore,Loneliness
+I have friends but still feel completely alone,Loneliness
+no one really knows the real me,Loneliness
+I miss having someone to talk to at the end of the day,Loneliness
+ghar mein sab hain phir bhi akela lagta hoon,Loneliness
+dost the par ab koi contact nahi karta,Loneliness
+I feel invisible to the people around me,Loneliness
+I have not had a real conversation in weeks,Loneliness
+raat ko sone se pehle bahut akela lagta hai,Loneliness
+kash koi hota jo samajhta,Loneliness
+I moved to a new city and have no one here,Loneliness
+I feel disconnected from everyone around me,Loneliness
+I rehearse what I will say before every phone call,SocialAnxiety
+I cancel plans because I get too anxious about going,SocialAnxiety
+I am terrified of saying something stupid in public,SocialAnxiety
+I feel sick before any social event,SocialAnxiety
+group discussions mein kuch bolne ki himmat nahi hoti,SocialAnxiety
+main hamesha sochta hoon ki log mere baare mein kya soch rahe hain,SocialAnxiety
+classroom mein answer pata hoga par haath nahi uthata,SocialAnxiety
+I feel like everyone notices my mistakes,SocialAnxiety
+apni baat rakhna bahut mushkil lagta hai sabke saamne,SocialAnxiety
+I have two job offers and cannot pick one,Confusion/DecisionMaking
+I keep changing my mind every single day,Confusion/DecisionMaking
+both options have risks and I do not know which to take,Confusion/DecisionMaking
+ek side family chahti hai doosri side main kuch aur chahta hoon,Confusion/DecisionMaking
+I do not trust my own judgment anymore,Confusion/DecisionMaking
+har option mein kuch na kuch problem hai,Confusion/DecisionMaking
+I want to build better habits but always fail,SelfImprovement
+I start things with motivation but never finish them,SelfImprovement
+how do I become more disciplined,SelfImprovement
+I want to wake up early but cannot stick to it,SelfImprovement
+main apni personality improve karna chahta hoon,SelfImprovement
+I waste too much time and want to change that,SelfImprovement
+I want to be more productive every day,SelfImprovement
+apne andar discipline laana chahta hoon,SelfImprovement
+I want to stop procrastinating but I keep failing,SelfImprovement
+I feel like I am not growing as a person,SelfImprovement
+mujhe apni communication skills improve karni hain,SelfImprovement
+main ek behtar version of myself banna chahta hoon,SelfImprovement
+my partner and I keep fighting over the same things,Relationship
+I feel unheard in my relationship,Relationship
+I don't know if I still love this person,Relationship
+my friendship ended and I don't know why,Relationship
+I feel like I give more than I receive in this relationship,Relationship
+rishte mein bahut tension aa gayi hai,Relationship
+mera dost mujhse baat nahi karta ab,Relationship
+ghar mein sab se ladayi ho rahi hai,Relationship
+main apne partner ko samajh nahi pa raha,Relationship
+trust toot gaya hai rishte mein,Relationship
+I feel taken for granted by people I care about,Relationship
+I don't know how to set boundaries with family,Relationship
+my relationship feels one sided,Relationship
+koi meri feelings ko seriously nahi leta,Relationship
+log mujhe hurt karte hain aur main kuch nahi bol pata,Relationship
+my workload is completely unmanageable right now,Stress
+I have back to back submissions this week,Stress
+pressure from all sides — family job studies everything,Stress
+I am running on no sleep because of work,Stress
+sab ek saath ho raha hai aur main toot raha hoon,Stress
+itne kaam mein khud ko bhool gaya hoon,Stress
+I feel like I am always behind no matter how hard I try,Stress
+the pressure is making me physically ill,Stress
+I dread waking up because of everything waiting for me,Stress
+har din naya pressure aur koi break nahi,Stress
+my partner never listens when I try to talk,Relationship
+I don't feel loved in this relationship anymore,Relationship
+we keep having the same argument over and over,Relationship
+my best friend suddenly stopped talking to me,Relationship
+I feel like I always apologize first even when it's not my fault,Relationship
+the person I trusted most betrayed me,Relationship
+I give everything in this relationship and get nothing back,Relationship
+my family never understands what I'm going through,Relationship
+I don't know how to tell someone they hurt me,Relationship
+I feel invisible to the people I love,Relationship
+rishte mein communication hi nahi hai,Relationship
+mujhe lagta hai is rishte mein main akela hun,Relationship
+hamara rishta ab pehle jaisa nahi raha,Relationship
+maine trust kiya aur woh toot gaya,Relationship
+ghar mein sab se emotional distance aa gayi hai,Relationship
+mujhe apne partner ko baat karna mushkil lagta hai,Relationship
+mere dost ne mujhe hurt kiya aur ab baat nahi karta,Relationship
+main chahta hoon rishta theek ho jaye par kaise pata nahi,Relationship
+maa baap meri baat nahi sunते,Relationship
+koi mere feelings ko seriously nahi leta,Relationship
+I have two options in front of me and can't pick either,Confusion/DecisionMaking
+"every time I think I've decided, something makes me change my mind",Confusion/DecisionMaking
+I've been going back and forth on this for weeks,Confusion/DecisionMaking
+I made a pros and cons list and I'm still stuck,Confusion/DecisionMaking
+I don't trust my own decisions anymore,Confusion/DecisionMaking
+both paths feel equally right and equally wrong,Confusion/DecisionMaking
+I ask everyone what to do but their answers make it harder,Confusion/DecisionMaking
+I can't commit to either option and time is running out,Confusion/DecisionMaking
+do raste hain aur dono mein risk hai,Confusion/DecisionMaking
+pata nahi left loon ya right — dono sahi bhi lagte hain aur galat bhi,Confusion/DecisionMaking
+bahut soch liya par decision abhi bhi nahi hua,Confusion/DecisionMaking
+ek choice karti hoon toh doosri choot jaati hai — dono chahiye,Confusion/DecisionMaking
+main khud pe itna bharosa nahi karta ki decision le sakun,Confusion/DecisionMaking
+I have five deadlines this week and no idea how to manage all of them,Stress
+work is piling up faster than I can clear it,Stress
+I'm juggling too many responsibilities at once and dropping things,Stress
+the pressure from my manager is becoming unbearable,Stress
+I feel like I'm always one task behind no matter how fast I work,Stress
+submission deadline is tomorrow and I haven't started,Stress
+everything is due at the same time and I can't prioritize,Stress
+workload hai aur time nahi — itna kaam ek saath nahi ho sakta,Stress
+boss ka pressure aur ghar ka pressure ek saath zyada ho gaya,Stress
+deadline aane wali hai aur main aadha bhi complete nahi kar paya,Stress
+assignments ka ek ke baad ek stack ho gaya hai,Stress
+itne tasks hain ki pata hi nahi kis se shuru karun,Stress
+I understand in class but forget everything when I sit to study,Learning
+I've revised this topic four times and it still won't stick,Learning
+I can't focus when I sit down to study — my mind wanders,Learning
+I don't know which study technique actually works for me,Learning
+I'm falling behind in my subject and don't know how to catch up,Learning
+concepts meri samajh mein aate hain par exam mein bhool jaata hoon,Learning
+padhai baith ke bhi focus nahi aata,Learning
+syllabus itna zyada hai ki pata nahi se shuru karun,Learning
+koi bhi topic properly yaad nahi hota,Learning
+notes banata hoon par revision karta hoon toh sab bhool jaata hai,Learning
+I get physically sick before any presentation or group activity,SocialAnxiety
+I rehearse every conversation in my head before having it,SocialAnxiety
+I'm terrified of saying something wrong and being judged for it,SocialAnxiety
+I avoid raising my hand even when I know the answer,SocialAnxiety
+I over-analyze every conversation after it's over,SocialAnxiety
+even texting someone new makes me anxious for hours,SocialAnxiety
+I feel like everyone in the room is watching and judging me,SocialAnxiety
+I cancel plans at the last minute because I can't face people,SocialAnxiety
+presentation se pehle itna darr lagta hai ki neend nahi aati,SocialAnxiety
+class mein kuch bolunga toh log hasenge — yeh sochke chup rehta hoon,SocialAnxiety
+kisi se baat karte waqt chehra laal ho jaata hai aur dil tez dhadakta hai,SocialAnxiety
+log mujhe judge karenge yeh darr hamesha rehta hai,SocialAnxiety
+naye log milne se pehle anxiety hoti hai,SocialAnxiety

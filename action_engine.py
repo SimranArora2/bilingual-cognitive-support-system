@@ -846,7 +846,168 @@ BANK = {
         "hi": ["अभी: एक sentence लिखो कि क्या चाहिए। उन्हें क्या करना है नहीं — तुम्हें क्या चाहिए। यहाँ से शुरू करो"]
       }
     }
+  },
+
+  # ───────────────────────────────────────────────────────────────────────────
+  "SocialAnxiety": {
+
+    "normal": {
+      "emotional": {
+        "en": [
+          "The fear of being judged is one of the most exhausting things to carry — because it never fully switches off. You're not being oversensitive. This is real and it's heavy",
+          "Social anxiety isn't shyness. It's your nervous system treating social situations like threats. That's not a character flaw — it's a pattern that formed for a reason",
+          "Dreading a conversation before it happens, replaying it after — that mental load is genuinely tiring. You're not imagining it",
+        ],
+        "hi": [
+          "लोगों के judge करने का डर सबसे थका देने वाली चीज़ों में से एक है — क्योंकि यह कभी पूरी तरह बंद नहीं होता। तुम ज़्यादा sensitive नहीं हो। यह real है और heavy है",
+          "Social anxiety सिर्फ shyness नहीं है। यह तुम्हारा nervous system है जो social situations को threat की तरह treat करता है। यह character flaw नहीं — यह एक pattern है जो किसी वजह से बना",
+          "बात होने से पहले उसे dread करना, बाद में replay करना — यह mental load genuinely थका देता है। तुम imagine नहीं कर रहे",
+        ]
+      },
+      "analytical": {
+        "en": [
+          "Social anxiety runs on a loop: anticipate → dread → avoid → feel relieved → repeat. The relief from avoiding is what keeps the loop going. Avoidance feeds it",
+          "The judgment you fear is almost always more severe in your imagination than in reality. Most people are thinking about themselves, not watching you",
+          "Notice the pattern: is the anxiety worst before the situation, during it, or after? Knowing where it peaks tells you where to focus first",
+        ],
+        "hi": [
+          "Social anxiety एक loop पर चलती है: anticipate → dread → avoid → relief feel करो → repeat। Avoid करने की relief ही loop को चलाती रहती है",
+          "जिस judgment से डरते हो वो almost हमेशा imagination में reality से कहीं ज़्यादा severe होती है। ज़्यादातर लोग खुद के बारे में सोच रहे होते हैं, तुम्हें नहीं देख रहे",
+          "Pattern notice करो: anxiety सबसे ज़्यादा situation से पहले है, उसके दौरान, या बाद में? यह जानना बताता है पहले कहाँ focus करें",
+        ]
+      },
+      "action": {
+        "en": [
+          "This week: do one small social thing you'd normally avoid — reply to a message, say one thing in a group chat. Not to cure anything. Just to show your brain the threat isn't real",
+          "Before the next situation you're dreading: write down the exact worst thing you think will happen. Then write what would actually happen if it did. Usually the real consequence is far smaller than the fear",
+          "After a social situation — stop the replay. Give yourself 2 minutes max to reflect, then consciously move to something else. Replaying reinforces anxiety, it doesn't process it",
+        ],
+        "hi": [
+          "इस हफ्ते: एक छोटा social काम करो जो normally avoid करते — किसी message का reply करो, group chat में एक बात कहो। कुछ cure करने के लिए नहीं। बस brain को दिखाने के लिए कि threat real नहीं है",
+          "अगली situation से पहले जिससे डर रहे हो: exactly वो worst चीज़ लिखो जो लगता है होगी। फिर लिखो अगर हो भी गई तो actually क्या होगा। Usually real consequence डर से कहीं छोटी होती है",
+          "Social situation के बाद — replay बंद करो। खुद को 2 minutes दो reflect करने के लिए, फिर consciously कुछ और करो। Replaying anxiety को process नहीं करती, reinforce करती है",
+        ]
+      },
+      "reflective": {
+        "en": [
+          "What specifically are you afraid people will think? Try to name it precisely — 'they'll think I'm boring', 'they'll think I'm stupid'. Getting specific makes the fear smaller",
+          "When did you first start feeling this way in social situations? Was there a time before this when it felt easier?",
+          "Whose voice is it that tells you you'll be judged? Is it actually the people around you — or someone from earlier in your life?",
+        ],
+        "hi": [
+          "Specifically क्या डर है कि लोग क्या सोचेंगे? इसे precisely name करने की कोशिश करो — 'वो सोचेंगे मैं boring हूँ', 'वो सोचेंगे मैं stupid हूँ'। Specific होने से डर छोटा होता है",
+          "Social situations में यह कब से feel होने लगा? क्या कोई वक्त था जब यह easier लगता था?",
+          "वो आवाज़ किसकी है जो कहती है तुम्हें judge किया जाएगा? क्या वो actually तुम्हारे आसपास के लोग हैं — या ज़िंदगी में पहले कोई था?",
+        ]
+      },
+      "reframe": {
+        "en": [
+          "Anxiety before social situations is your brain trying to protect you — it's just miscalibrated. The goal isn't to feel no fear. It's to act anyway while the fear is there",
+          "Everyone in that room has their own version of self-consciousness running. The person you think is judging you is probably worried about being judged themselves",
+          "Feeling nervous before speaking isn't weakness — it means you care. The nervousness and the courage exist at the same time. You don't need the nervousness to disappear to act",
+        ],
+        "hi": [
+          "Social situations से पहले anxiety तुम्हारा brain तुम्हें protect करने की कोशिश है — बस miscalibrated है। Goal कोई डर न feel करना नहीं है। Goal है डर होते हुए भी act करना",
+          "उस room में हर कोई अपनी खुद की self-consciousness लेकर बैठा है। जो तुम्हें judge कर रहा है लगता है — वो probably खुद judge होने से डर रहा है",
+          "बोलने से पहले nervous feel करना कमज़ोरी नहीं — इसका मतलब है तुम्हें care है। Nervousness और courage एक साथ exist करते हैं। Act करने के लिए nervousness को जाने की ज़रूरत नहीं",
+        ]
+      },
+      "story": {
+        "en": [
+          "Almost everyone who seems naturally confident in social situations has learned to act despite anxiety — not in the absence of it. Confidence is a practiced behavior, not a personality you either have or don't",
+          "The most socially fluent people you know have all said something awkward, been misunderstood, or had a conversation go wrong. They just didn't let it define the next one",
+        ],
+        "hi": [
+          "लगभग हर वो इंसान जो social situations में naturally confident लगता है उसने anxiety के बावजूद act करना सीखा है — उसकी absence में नहीं। Confidence एक practiced behavior है, personality नहीं जो हो या न हो",
+          "जो लोग तुम्हें socially fluent लगते हैं उन्होंने भी awkward चीज़ें कही हैं, misunderstood हुए हैं, conversations wrong गई हैं। बस उन्होंने उसे अगली बार define नहीं करने दिया",
+        ]
+      }
+    },
+
+    "deep": {
+      "emotional": {
+        "en": [
+          "Social anxiety often has roots — a time you were embarrassed in front of people, laughed at, or made to feel like your voice didn't matter. The anxiety now is protective, even if it's gone too far",
+          "The exhaustion of performing 'okay' in social situations while feeling terrified inside is real. You're carrying something most people around you can't see",
+        ],
+        "hi": [
+          "Social anxiety की अक्सर जड़ें होती हैं — कोई वक्त जब लोगों के सामने embarrass हुए, हँसाए गए, या feel कराया गया कि तुम्हारी आवाज़ matter नहीं करती। अब की anxiety protective है, भले ही ज़रूरत से ज़्यादा हो गई हो",
+          "Social situations में अंदर से terrified होते हुए 'okay' perform करने की थकान real है। तुम कुछ ऐसा carry कर रहे हो जो तुम्हारे आसपास के लोग देख नहीं सकते",
+        ]
+      },
+      "reflective": {
+        "en": [
+          "What would it mean for you if people did judge you? What's the actual fear underneath the fear — rejection, being seen as less-than, not belonging?",
+          "Is there a version of you that exists only when no one is watching — more relaxed, more yourself? What would it take to let that version exist around other people too?",
+          "Who in your life has ever made you feel fully safe to be yourself? What was different about how they showed up?",
+        ],
+        "hi": [
+          "अगर लोग judge भी कर दें तो तुम्हारे लिए क्या मतलब होगा? डर के नीचे actual डर क्या है — rejection, कम समझे जाने का, belong न करने का?",
+          "क्या तुम्हारा एक version है जो सिर्फ तब exist करता है जब कोई नहीं देख रहा — ज़्यादा relaxed, ज़्यादा खुद? उस version को दूसरों के साथ भी exist करने देने के लिए क्या चाहिए होगा?",
+          "तुम्हारी ज़िंदगी में किसने कभी तुम्हें पूरी तरह खुद होने के लिए safe feel कराया? उन्होंने जो किया उसमें क्या अलग था?",
+        ]
+      },
+      "reframe": {
+        "en": [
+          "The self-monitoring that social anxiety creates — watching yourself from the outside, editing before you speak — developed as protection. It kept you safe once. It's just not helping you now",
+          "You're not too sensitive. You're not broken. You have a nervous system that learned to treat connection as risk. That can be unlearned — slowly, with practice, not with force",
+        ],
+        "hi": [
+          "Social anxiety जो self-monitoring create करती है — खुद को बाहर से देखना, बोलने से पहले edit करना — यह protection के रूप में develop हुई। एक वक्त तुम्हें safe रखती थी। बस अब help नहीं कर रही",
+          "तुम ज़्यादा sensitive नहीं हो। तुम broken नहीं हो। तुम्हारे पास एक nervous system है जिसने connection को risk मानना सीख लिया। यह unlearn हो सकता है — धीरे-धीरे, practice से, ज़बरदस्ती से नहीं",
+        ]
+      },
+      "analytical": {
+        "en": [
+          "Social anxiety is maintained by two things: anticipatory anxiety (dread before) and post-event processing (replay after). Both are imagination, not reality. The actual event is usually the easiest part",
+          "Ask: what's the evidence that people are actually judging me? Not the feeling — the actual evidence. Most of the time there isn't any",
+        ],
+        "hi": [
+          "Social anxiety दो चीज़ों से maintain होती है: anticipatory anxiety (पहले का dread) और post-event processing (बाद में replay)। दोनों imagination हैं, reality नहीं। Actual event usually सबसे easy part होता है",
+          "पूछो: evidence क्या है कि लोग actually judge कर रहे हैं? Feeling नहीं — actual evidence। ज़्यादातर बार होती ही नहीं",
+        ]
+      },
+      "story": {
+        "en": [
+          "Social anxiety shrinks your world gradually — fewer situations, smaller circles, more safety. The problem is the world keeps shrinking. Every avoided situation tells your brain the threat was real",
+        ],
+        "hi": [
+          "Social anxiety तुम्हारी दुनिया धीरे-धीरे छोटी करती है — कम situations, छोटे circles, ज़्यादा safety। Problem यह है कि दुनिया सिकुड़ती रहती है। हर avoid की गई situation brain को बताती है कि threat real था",
+        ]
+      },
+      "action": {
+        "en": [
+          "Write about the last time social anxiety stopped you from doing something you wanted to do. What was the cost? Not the avoided discomfort — the actual cost to your life",
+        ],
+        "hi": [
+          "उस आखिरी बार के बारे में लिखो जब social anxiety ने तुम्हें कुछ ऐसा करने से रोका जो तुम करना चाहते थे। Cost क्या थी? Avoid की गई discomfort नहीं — तुम्हारी ज़िंदगी की actual cost",
+        ]
+      }
+    },
+
+    "simple": {
+      "emotional": {
+        "en": ["You don't have to perform today. Just show up as you are"],
+        "hi": ["आज perform नहीं करना। बस जैसे हो वैसे रहो"]
+      },
+      "action": {
+        "en": ["One small thing: make brief eye contact and smile at one person today. That's it"],
+        "hi": ["एक छोटी चीज़: आज एक इंसान से brief eye contact करो और smile करो। बस इतना"]
+      },
+      "reframe": {
+        "en": ["They're not watching as closely as it feels. Everyone is mostly inside their own head"],
+        "hi": ["वो उतना नहीं देख रहे जितना feel होता है। हर कोई mostly अपने ही दिमाग में है"]
+      }
+    },
+
+    "next": {
+      "action": {
+        "en": ["Right now: do the one small social thing you've been avoiding. Text back, say the thing, show up. Ten seconds of courage"],
+        "hi": ["अभी: वो एक छोटा social काम करो जो avoid कर रहे थे। Text back करो, वो बात कहो, show up करो। दस seconds की हिम्मत"]
+      }
+    }
   }
+
 }
 
 # ─────────────────────────────────────────────────────────────────────────────

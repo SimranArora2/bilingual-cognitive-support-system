@@ -88,113 +88,6 @@ def detect_mood(text):
         return "motivated"
     return "calm"
 
-'''# ---------------- ACTION PLANNER ----------------
-def generate_action_plan(detected_intents, confidence, mood, lang, mode="normal"):
-    
-    plans = {
-        "Stress": {
-            "en": ["Let's slow down — write your top 3 worries", "Pick just ONE to handle today", "The rest can wait — you don't need to fix everything now"],
-            "hi": ["चलो थोड़ा धीरे चलते हैं — अपनी 3 सबसे बड़ी चिंताएं लिखो", "आज सिर्फ 1 चीज पर ध्यान दो", "बाकी बाद में भी हो सकता है"]
-        },
-        "Career": {
-            "en": ["Identify one small career task for today", "Research one role or skill you're curious about", "Build a simple 30-day improvement plan"],
-            "hi": ["आज एक छोटा करियर टास्क तय करो", "एक स्किल या रोल के बारे में जानो", "30 दिन की योजना बनाओ"]
-        },
-        "Learning": {
-            "en": ["Choose ONE topic only — not five", "Use 25-minute focused study blocks", "Revise using active recall, not re-reading"],
-            "hi": ["सिर्फ एक टॉपिक चुनो", "25 मिनट फोकस में पढ़ो", "एक्टिव तरीके से रिविजन करो"]
-        },
-        "Loneliness": {
-            "en": ["Message one person you trust right now", "Do one small thing you genuinely enjoy", "Avoid self-blame — connection takes effort"],
-            "hi": ["किसी एक व्यक्ति को मैसेज करो", "कुछ पसंद का काम करो", "खुद को दोष मत दो"]
-        },
-        "Motivation": {
-            "en": ["Start with the smallest possible action", "Remind yourself why this matters to you", "Track just today — not the whole journey"],
-            "hi": ["बहुत छोटे से शुरू करो", "अपना कारण याद करो", "आज पर ही ध्यान दो"]
-        },
-        "SelfImprovement": {
-            "en": ["Pick one habit to work on — just one", "Start smaller than you think you should", "Track daily and reflect weekly"],
-            "hi": ["एक आदत चुनो — सिर्फ एक", "जितना सोचो उससे छोटे से शुरू करो", "रोज़ ट्रैक करो, हफ्ते में सोचो"]
-        },
-        "Finance": {
-            "en": ["Write down your expenses honestly", "Identify one area where you can cut back", "Set one small, realistic financial goal"],
-            "hi": ["अपना खर्च ईमानदारी से लिखो", "एक जगह खर्च कम करो", "एक छोटा वित्तीय लक्ष्य बनाओ"]
-        },
-        "Health": {
-            "en": ["Drink water right now — seriously", "Pick one health habit to improve this week", "Fix either sleep or movement first — not both"],
-            "hi": ["अभी पानी पियो", "इस हफ्ते एक स्वास्थ्य आदत सुधारो", "पहले नींद या व्यायाम — एक चुनो"]
-        },
-        "Relationship": {
-            "en": ["Reflect on what you actually need from this relationship", "Communicate one feeling clearly and calmly", "Give space if needed — for yourself too"],
-            "hi": ["सोचो तुम्हें इस रिश्ते से क्या चाहिए", "एक भावना शांति से बताओ", "जगह दो — खुद को भी"]
-        },
-        "Confusion/DecisionMaking": {
-            "en": ["Write down the decision and all your options", "For each option: what's the realistic worst case?", "Trust your gut after the analysis — decide calmly"],
-            "hi": ["सभी विकल्प लिखो", "हर विकल्प का सबसे बुरा परिणाम सोचो", "शांत होकर निर्णय लो"]
-        }
-    }
-
-    steps = []
-
-    # Mood-based opening
-    if mood in ["stressed", "sad"]:
-        if lang == "hi":
-            steps.append("पहले एक गहरी सांस लो — धीरे-धीरे आगे बढ़ते हैं")
-        else:
-            steps.append("Take a breath first — let's go one step at a time.")
-    # Low confidence note
-    if confidence < 60:
-        if lang == "hi":
-            steps.append("शायद मैं पूरी तरह सही न होऊं, लेकिन चलो इसे साथ में समझने की कोशिश करते हैं:")
-        else:
-            steps.append("I may not be fully certain, but let's figure this out together:")
-
-    # Feedback learning — skip disliked intents
-    feedback_data = []
-    if os.path.exists("feedback_data.json"):
-        with open("feedback_data.json", "r") as f:
-            feedback_data = json.load(f)
-
-    negative_intents = {e.get("intent") for e in feedback_data if e.get("feedback") == "no"}
-
-    # Build steps from detected intents
-    used_intents = []
-    for intent, _ in detected_intents:
-        if intent in negative_intents:
-            continue
-        intent_plan = plans.get(intent)
-        if intent_plan:
-            plan_steps = intent_plan["hi"] if lang == "hi" else intent_plan["en"]
-            random.shuffle(plan_steps) 
-            # Pick random 2–3 steps instead of all
-            selected_steps = random.sample(plan_steps, min(3, len(plan_steps)))
-            steps += selected_steps
-            used_intents.append(intent)
-
-    # Fallback if all intents were filtered
-    if not used_intents:
-        for intent, _ in detected_intents:
-            intent_plan = plans.get(intent)
-            if intent_plan:
-                plan_steps = intent_plan["hi"] if lang == "hi" else intent_plan["en"]
-                random.shuffle(plan_steps) 
-                selected_steps = random.sample(plan_steps, min(3, len(plan_steps)))
-                steps += selected_steps
-    # Remove duplicates, limit to 5
-    steps = list(dict.fromkeys(steps))
-    # 🎯 Apply mode AFTER steps are built
-    if mode == "simple":
-        steps = steps[:2]
-
-    elif mode == "deep":
-        if lang == "hi":
-            steps.append("थोड़ा रुककर सोचो — यह क्यों हो रहा है और तुम असल में क्या चाहते हो")
-        else:
-            steps.append("Pause and reflect — why is this happening and what do you truly want?")
-
-    elif mode == "next":
-        steps = steps[:1]
-    return steps[:5]'''
 
 # ---------------- MEMORY ----------------
 def get_session_memory():
@@ -216,7 +109,8 @@ MOOD_EMOJI = {"stressed": "😤", "sad": "😔", "confused": "😕", "motivated"
 INTENT_EMOJI = {
     "Career": "💼", "Learning": "📘", "Stress": "🧘", "Loneliness": "💬",
     "Motivation": "🚀", "SelfImprovement": "⭐", "Finance": "💰",
-    "Health": "❤️", "Relationship": "🤝", "Confusion/DecisionMaking": "🔍"
+    "Health": "❤️", "Relationship": "🤝", "Confusion/DecisionMaking": "🔍",
+    "SocialAnxiety": "😰"
 }
 
 # ---------------- ROUTES ----------------
@@ -258,7 +152,7 @@ def chat():
 
         intents = model.classes_
 
-        threshold = 0.15
+        threshold = 0.25
         detected_intents = [
             (intents[i], probs[i])
             for i in range(len(probs))
@@ -270,10 +164,6 @@ def chat():
             detected_intents = [(intents[top_idx], probs[top_idx])]
 
         detected_intents = sorted(detected_intents, key=lambda x: x[1], reverse=True)
-
-        if len(detected_intents) < 2:
-            top2 = probs.argsort()[-2:][::-1]
-            detected_intents = [(intents[i], probs[i]) for i in top2]
 
         # 🔹 Extract info
         primary_intent = detected_intents[0][0]
